@@ -5,14 +5,22 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXMLLoader;
-
+import javafx.scene.text.Font;
 
 public class Main extends Application {
+	
+	@Override
+	  public void init() throws Exception {
+	    super.init();
+	 
+	    Font.loadFont(Main.class.getResource("resources/fonts/GreatVibes.otf").toExternalForm(), 12);
+	  }
+	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("Sample.fxml"));
-			Scene scene = new Scene(root,400,400);
+			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("windowProf.fxml"));
+			Scene scene = new Scene(root,1280,1024);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
