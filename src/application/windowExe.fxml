@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowExe">
+   <children>
+      <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-background-color: #35a8e1;">
+         <children>
+            <Button fx:id="titleBtn" layoutX="84.0" layoutY="-1.0" mnemonicParsing="false" onAction="#directHome" style="-fx-background-color: #35a8e1;" text="Lingus" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="37.0" />
+               </font>
+            </Button>
+            <Button layoutX="1029.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #35a8e1;" text="Deconnexion" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeBtn" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#directHome" style="-fx-background-color: white; -fx-background-radius: 30;" text="Accueil" textFill="#35a8e1">
+               <font>
+                  <Font name="Candara" size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="358.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #35a8e1;" text="Magazine" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="485.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #35a8e1;" text="Atelier" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="577.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #35a8e1;" text="Outils" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="907.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: #35a8e1;" text="Profil" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="110.0" layoutY="110.0" prefHeight="860.0" prefWidth="680.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+      <Pane layoutX="830.0" layoutY="110.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+      <Pane layoutX="150.0" layoutY="150.0" prefHeight="780.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+      <Pane layoutX="860.0" layoutY="150.0" prefHeight="350.0" prefWidth="280.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
+   </children>
+</Pane>
