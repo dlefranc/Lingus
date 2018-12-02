@@ -183,7 +183,7 @@
       </Pane>
       <Pane layoutX="860.0" layoutY="150.0" prefHeight="350.0" prefWidth="280.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <Label layoutY="-4.0" text="Niveau :">
+            <Label layoutX="96.0" layoutY="-4.0" text="Niveau">
                <font>
                   <Font name="Candara" size="30.0" />
                </font>
