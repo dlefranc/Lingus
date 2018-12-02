@@ -1,4 +1,4 @@
-package application;
+package application; 
 	
 import javafx.application.Application;
 import javafx.scene.Parent;
@@ -41,7 +41,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			//stage = primaryStage;
-			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowExe.fxml"));
+			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowHome.fxml"));
 			//BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("windowProf.fxml"));
 			Scene scene = new Scene(root,1280,1024);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

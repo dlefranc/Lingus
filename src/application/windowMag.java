@@ -14,7 +14,7 @@ public class windowMag {
 
 	public void testMag() {
 		
-		System.out.println("réussi");
+		System.out.println("réussi"); 
 	
 	}
 	
