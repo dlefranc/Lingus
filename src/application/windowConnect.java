@@ -1,69 +1,41 @@
 package application;
 
-import javafx.application.Application;
+import java.io.IOException;
+import javafx.event.ActionEvent;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.FXML;
-import javafx.fxml.JavaFXBuilderFactory;
 import javafx.scene.control.*;
 
-public class windowConnect extends Application {
-	private Stage stage;
-	
+public class windowConnect {
 	@FXML
 	private TextField userProf;
-	
 	@FXML
-	private TextField mdpProf;
+	private PasswordField mdpProf;
+	@FXML
+	private Label erreur;
 	
-	@Override
-	public void start(Stage primaryStage) {
-		try {
-			stage = primaryStage;
-			BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("windowProf.fxml"));
-			Scene scene = new Scene(root,1280,1024);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setScene(scene);
-			primaryStage.show();
-		} catch(Exception e) {
-			e.printStackTrace();
+	public void tryConnec(ActionEvent event) throws IOException{
+		String user="test";
+		String mdp="test";
+		
+		if(userProf.getText().equals(user)  && mdpProf.getText().equals(mdp)) {
+			Parent homeView = FXMLLoader.load(getClass().getResource("windowHome.fxml"));
+			Scene homeScene = new Scene(homeView);
+			
+			Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+			window.setScene(homeScene);
 		}
-	}
-	//////////////////////////////////////////////////////////////////
-	private Parent replaceSceneContent(String fxml) throws Exception {
-        Parent page = (Parent) FXMLLoader.load(Main.class.getResource(fxml), null, new JavaFXBuilderFactory());
-        Scene scene = stage.getScene();
-        if (scene == null) {
-            scene = new Scene(page, 1280, 1024);
-            scene.getStylesheets().add(Main.class.getResource("application.css").toExternalForm());
-            stage.setScene(scene);
-        } else {
-            stage.getScene().setRoot(page);
-        }
-        stage.sizeToScene(); 
-        return page;
-    }
-	
-	public void connectFail(Stage windowFail) {
-		 try {
-	            replaceSceneContent("windowFail.fxml");
-	        } catch (Exception e) {
-	        	e.printStackTrace();
-	        }
-	}
-	
+		else {	
+			userProf.setStyle("-fx-border-color: red; -fx-border-radius: 25; -fx-background-radius: 25; ");
+			mdpProf.setStyle("-fx-border-color: red; -fx-border-radius: 25; -fx-background-radius: 25; ");
+			erreur.setStyle("-fx-font-color: red; visibility: true;"); 
+		}
+		
+		
 
-	public void connectTest() {
-		if(userProf.getText() == "test" && mdpProf.getText() == "s") {
-			System.out.println("réussi");
-		}
-		else {
-			System.out.println("fail");
-		}
 	}
-	/////////////////////////////////////////////////////////////////////
-
 }

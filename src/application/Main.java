@@ -1,19 +1,13 @@
 package application; 
 	
 import javafx.application.Application;
-import javafx.scene.Parent;
+
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
+
 import javafx.scene.layout.Pane;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.FXML;
-import javafx.scene.text.Font;
-import javafx.fxml.JavaFXBuilderFactory;
-import javafx.scene.control.*;
-import java.lang.Object;
-import javafx.animation.Animation.*;
-import javafx.animation.Transition.*;
+
 
 /*import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -21,6 +15,7 @@ import demo.model.User;
 import demo.security.Authenticator;*/
 
 public class Main extends Application {
+	Scene conec, home, mag, workshop, tools, prof, deco;
 	/*private Stage stage;
 	
 	@FXML
@@ -41,8 +36,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			//stage = primaryStage;
-			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowProfile.fxml"));
-			//BorderPane root = (BorderPane)FXMLLoader.load(getClass().getResource("windowProf.fxml"));
+			//Pane root = (Pane)FXMLLoader.load(getClass().getResource("test.fxml"));
+			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowConnect.fxml"));
 			Scene scene = new Scene(root,1280,1024);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);

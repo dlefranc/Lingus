@@ -22,7 +22,7 @@
                   <Font name="Arial" size="24.0" />
                </font>
             </PasswordField>
-            <Button fx:id="connect" layoutX="534.0" layoutY="850.0" mnemonicParsing="false" onAction="#connectTest" style="-fx-background-radius: 25;" text="Se connecter">
+            <Button fx:id="connect" layoutX="534.0" layoutY="850.0" mnemonicParsing="false" onAction="#tryConnec" style="-fx-background-radius: 25;" text="Se connecter">
                <font>
                   <Font size="30.0" />
                </font>
@@ -30,6 +30,11 @@
             <Label layoutX="345.0" layoutY="152.0" text="Lingus" textFill="WHITE">
                <font>
                   <Font name="Candara" size="210.0" />
+               </font>
+            </Label>
+            <Label fx:id="erreur" layoutX="505.0" layoutY="784.0" text="Erreur dans les données entrées" textFill="RED" visible="false">
+               <font>
+                  <Font name="Candara" size="20.0" />
                </font>
             </Label>
          </children>
