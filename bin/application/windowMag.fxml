@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowMag">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowMag">
    <children>
-      <Pane layoutX="110.0" layoutY="110.0" prefHeight="860.0" prefWidth="680.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
-      <Pane layoutX="830.0" layoutY="110.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
-      <Pane layoutX="150.0" layoutY="150.0" prefHeight="780.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+      <Pane layoutX="125.0" layoutY="539.0" prefHeight="335.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <Label layoutX="209.0" layoutY="255.0" text="MAG">
-               <font>
-                  <Font size="96.0" />
-               </font>
-            </Label>
+            <ImageView fitHeight="220.0" fitWidth="150.0" layoutX="40.0" layoutY="57.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="220.0" fitWidth="150.0" layoutX="240.0" layoutY="55.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="220.0" fitWidth="150.0" layoutX="440.0" layoutY="55.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art3.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="220.0" fitWidth="150.0" layoutX="640.0" layoutY="55.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art4.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="220.0" fitWidth="150.0" layoutX="840.0" layoutY="55.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art5.jpg" />
+               </image>
+            </ImageView>
          </children></Pane>
-      <Pane layoutX="860.0" layoutY="150.0" prefHeight="350.0" prefWidth="280.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
       <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-background-color: #35a8e1;">
          <children>
             <Button fx:id="titleBtn" layoutX="84.0" mnemonicParsing="false" onAction="#sceneHome" style="-fx-background-color: #35a8e1;" text="Lingus" textFill="WHITE">
@@ -39,7 +62,7 @@
             </Button>
             <Button fx:id="homeBtn" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneHome" onMouseEntered="#mouseOverHome" onMouseExited="#mouseExitHome" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Accueil" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -79,5 +102,15 @@
             </Button>
          </children>
       </Pane>
+      <ComboBox layoutX="565.0" layoutY="256.0" prefWidth="150.0" promptText="Art" style="-fx-background-color: white;" visibleRowCount="8">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label layoutX="459.0" layoutY="376.0" text="Selectionner ">
+         <font>
+            <Font name="Chandas" size="55.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

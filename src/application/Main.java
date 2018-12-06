@@ -6,6 +6,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Font;
 import javafx.fxml.FXMLLoader;
 
 
@@ -37,7 +38,8 @@ public class Main extends Application {
 		try {
 			//stage = primaryStage;
 			//Pane root = (Pane)FXMLLoader.load(getClass().getResource("test.fxml"));
-			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowConnect.fxml"));
+			Font.loadFont(getClass().getResourceAsStream("../../resources/fonts/CANDARA.TFF"), 14);
+			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowMag.fxml"));
 			Scene scene = new Scene(root,1280,1024);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
