@@ -2,8 +2,7 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -69,43 +68,9 @@
             </Button>
          </children>
       </Pane>
-      <Pane layoutX="110.0" layoutY="110.0" prefHeight="860.0" prefWidth="680.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+      <Pane layoutX="123.0" layoutY="136.0" prefHeight="753.0" prefWidth="1034.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <Label layoutX="216.0" layoutY="91.0" text="img 1 txt a trou">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="238.0" layoutY="263.0" text="img2 sound">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="181.0" layoutY="481.0" text="img 3 choix multiple">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="238.0" layoutY="670.0" text="img 4 aléa">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-      <Pane layoutX="830.0" layoutY="110.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 30;">
-         <children>
-            <Label layoutX="51.0" layoutY="25.0" text="Avancée exercices">
-               <font>
-                  <Font size="30.0" />
-               </font>
-            </Label>
-            <ProgressIndicator layoutX="70.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" progress="0.0" style="-fx-background-radius: 30;" />
-            <Label layoutX="100.0" layoutY="70.0" text="quotidiens">
-               <font>
-                  <Font size="30.0" />
-               </font>
-            </Label>
+            <ProgressBar layoutX="46.0" layoutY="42.0" prefHeight="18.0" prefWidth="942.0" progress="0.0" style="-fx-background-insets: green;" />
          </children>
       </Pane>
    </children>
