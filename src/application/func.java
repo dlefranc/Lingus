@@ -93,6 +93,7 @@ public class func extends Main{
 	}
 	
 	public void sceneTools(ActionEvent event) throws IOException{
+		System.out.println(event);
 		Parent ToolsView = FXMLLoader.load(getClass().getResource("windowTools.fxml"));
 		Scene ToolsScene = new Scene(ToolsView);
 		

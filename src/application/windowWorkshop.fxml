@@ -81,16 +81,21 @@
                   <Font size="32.0" />
                </font>
             </Label>
-            <Label layoutX="181.0" layoutY="481.0" text="img 3 choix multiple">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
             <Label layoutX="238.0" layoutY="670.0" text="img 4 aléa">
                <font>
                   <Font size="32.0" />
                </font>
             </Label>
+            <Label layoutX="182.0" layoutY="14.0" text="Choisissez votre exercice">
+               <font>
+                  <Font name="Candara" size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="229.0" layoutY="446.0" mnemonicParsing="false" onAction="#exe3" style="-fx-background-radius: 30;" text="Choix multiple">
+               <font>
+                  <Font name="Candara" size="30.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <Pane layoutX="830.0" layoutY="110.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 30;">

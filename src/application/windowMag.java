@@ -39,7 +39,7 @@ public class windowMag extends func{
 		categorie.getSelectionModel().select("Art");
 	}
 	
-	@SuppressWarnings({ "deprecation", "deprecation", "deprecation" })
+	@SuppressWarnings({ "deprecation" })
 	public void switchCategorie(ActionEvent event) throws IOException{
 		choice = categorie.getSelectionModel().getSelectedItem().toString();
 		switch (choice) {
