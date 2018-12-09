@@ -15,7 +15,7 @@
    <children>
       <Pane layoutX="125.0" layoutY="454.0" prefHeight="420.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <ImageView fx:id="mag1" fitHeight="220.0" fitWidth="150.0" layoutX="40.0" layoutY="150.0" onMouseEntered="#lumOnMag1" onMouseExited="#lumOffMag1" pickOnBounds="true">
+            <ImageView fx:id="mag1" fitHeight="220.0" fitWidth="150.0" layoutX="40.0" layoutY="150.0" onMouseClicked="#viewMag1" onMouseEntered="#lumOnMag1" onMouseExited="#lumOffMag1" pickOnBounds="true">
                <image>
                   <Image url="@../../resources/images/CoversMag/Eng/Art/Art1.jpg" />
                </image>
@@ -43,6 +43,11 @@
             <Label layoutX="183.0" layoutY="22.0" text="Sélectionner votre magazine">
                <font>
                   <Font name="Candara" size="55.0" />
+               </font>
+            </Label>
+            <Label fx:id="newMag" layoutX="71.0" layoutY="381.0" text="NOUVEAU" visible="false">
+               <font>
+                  <Font name="Candara" size="20.0" />
                </font>
             </Label>
          </children></Pane>
@@ -125,11 +130,47 @@
                		<String fx:value="Gossip" />
                		<String fx:value="Sport" />
                		<String fx:value="Teen" />
-               		<String fx:value="Travel" />
+               		<String fx:value="Travel NOUVEAU" />
                		<String fx:value="Wedding" />
                	</FXCollections>
                </items>
             </ComboBox>
+         </children>
+      </Pane>
+      <Pane fx:id="reader" layoutX="28.0" layoutY="25.0" prefHeight="975.0" prefWidth="1225.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <ImageView fx:id="page" fitHeight="945.0" fitWidth="726.0" layoutX="264.0" layoutY="14.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-001.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="left" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="412.0" onMouseClicked="#previousPage" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../resources/images/Mag/fleche.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="right" fitHeight="150.0" fitWidth="200.0" layoutX="1061.0" layoutY="413.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/Mag/fleche.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="cross" fitHeight="48.0" fitWidth="80.0" layoutX="1147.0" layoutY="14.0" onMouseClicked="#closePage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/Mag/croix.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
          </children>
       </Pane>
    </children>

@@ -71,22 +71,12 @@
       </Pane>
       <Pane layoutX="110.0" layoutY="110.0" prefHeight="860.0" prefWidth="680.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <Label layoutX="238.0" layoutY="263.0" text="img2 sound">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
-            <Label layoutX="238.0" layoutY="670.0" text="img 4 aléa">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
             <Label layoutX="182.0" layoutY="14.0" text="Choisissez votre exercice">
                <font>
                   <Font name="Candara" size="30.0" />
                </font>
             </Label>
-            <Button layoutX="229.0" layoutY="446.0" mnemonicParsing="false" onAction="#exe3" style="-fx-background-radius: 30;" text="Choix multiple">
+            <Button layoutX="229.0" layoutY="490.0" mnemonicParsing="false" onAction="#exe3" style="-fx-background-radius: 30;" text="Choix multiple">
                <font>
                   <Font name="Candara" size="30.0" />
                </font>
@@ -94,7 +84,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="243.0" layoutY="167.0" mnemonicParsing="false" onAction="#exe1" style="-fx-background-radius: 30;" text="Texte à trou">
+            <Button layoutX="243.0" layoutY="170.0" mnemonicParsing="false" onAction="#exe1" style="-fx-background-radius: 30;" text="Texte à trou">
                <font>
                   <Font name="Candara" size="30.0" />
                </font>
@@ -102,6 +92,21 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Button layoutX="184.0" layoutY="330.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Compréhension orale">
+               <font>
+                  <Font name="Candara" size="30.0" />
+               </font>
+            </Button>
+            <Button layoutX="257.0" layoutY="650.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Méli-mélo">
+               <font>
+                  <Font name="Candara" size="30.0" />
+               </font>
+            </Button>
+            <Label layoutX="49.0" layoutY="666.0" text="Bientôt disponible :">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
       <Pane layoutX="830.0" layoutY="110.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 30;">

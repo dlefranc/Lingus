@@ -43,8 +43,8 @@
                   <Font name="Candara" size="30.0" />
                </font>
             </Label>
-            <ProgressBar layoutX="57.0" layoutY="234.0" prefHeight="18.0" prefWidth="496.0" progress="0.0" />
-            <Label layoutX="49.0" layoutY="252.0" text="0%">
+            <ProgressBar layoutX="57.0" layoutY="234.0" prefHeight="18.0" prefWidth="496.0" progress="0.25" />
+            <Label layoutX="170.0" layoutY="252.0" text="25%">
                <font>
                   <Font name="Candara" size="16.0" />
                </font>
@@ -70,29 +70,24 @@
                   <Font name="Candara" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="131.0" layoutY="455.0" text="Check">
+            <Label layoutX="131.0" layoutY="495.0" text="Check">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="269.0" layoutY="455.0" text="Capacity">
+            <Label layoutX="269.0" layoutY="495.0" text="Capacity">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="430.0" layoutY="455.0" text="Plant">
-               <font>
-                  <Font name="Candara" size="20.0" />
-               </font>
-            </Label>
-            <Label layoutX="131.0" layoutY="516.0" text="Vous n'avez pas encore maîtrisé de mots.">
+            <Label layoutX="430.0" layoutY="495.0" text="Plant">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
             </Label>
             <ImageView fitHeight="82.0" fitWidth="77.0" layoutX="520.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Flags/flagFR.png" />
+                  <Image url="@../../resources/images/Flags/flagENG.png" />
                </image>
             </ImageView>
             <Button layoutX="508.0" layoutY="26.0" mnemonicParsing="false" style="-fx-background-radius: 50; -fx-background-color: white;" text="V">
