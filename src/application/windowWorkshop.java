@@ -13,6 +13,15 @@ public class windowWorkshop extends func{
 	public Integer dailyQ = 0;
 	
 	
+	public void exe1(ActionEvent event) throws IOException{
+		Parent exe1View = FXMLLoader.load(getClass().getResource("workshop1.fxml"));
+		Scene exe1Scene = new Scene(exe1View);
+		
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(exe1Scene);
+	}
+	
+	
 	public void exe3(ActionEvent event) throws IOException{
 		Parent exe3View = FXMLLoader.load(getClass().getResource("workshop3.fxml"));
 		Scene exe3Scene = new Scene(exe3View);

@@ -71,11 +71,6 @@
       </Pane>
       <Pane layoutX="110.0" layoutY="110.0" prefHeight="860.0" prefWidth="680.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <Label layoutX="216.0" layoutY="91.0" text="img 1 txt a trou">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Label>
             <Label layoutX="238.0" layoutY="263.0" text="img2 sound">
                <font>
                   <Font size="32.0" />
@@ -92,6 +87,11 @@
                </font>
             </Label>
             <Button layoutX="229.0" layoutY="446.0" mnemonicParsing="false" onAction="#exe3" style="-fx-background-radius: 30;" text="Choix multiple">
+               <font>
+                  <Font name="Candara" size="30.0" />
+               </font>
+            </Button>
+            <Button layoutX="243.0" layoutY="167.0" mnemonicParsing="false" onAction="#exe1" style="-fx-background-radius: 30;" text="Texte à trou">
                <font>
                   <Font name="Candara" size="30.0" />
                </font>
