@@ -104,12 +104,12 @@
                </font>
             </Label>
          </children></Pane>
-      <Hyperlink layoutX="834.0" layoutY="676.0" text="Apprendre une nouvelle langue">
+      <Hyperlink layoutX="838.0" layoutY="675.0" text="Apprendre une nouvelle langue">
          <font>
             <Font name="Candara" size="24.0" />
          </font>
       </Hyperlink>
-      <Hyperlink layoutX="925.0" layoutY="809.0" text="Liste de mots">
+      <Hyperlink layoutX="944.0" layoutY="810.0" text="Liste de mots">
          <font>
             <Font name="Candara" size="24.0" />
          </font>
@@ -174,5 +174,10 @@
             </Button>
          </children>
       </Pane>
+      <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="1094.0" layoutY="797.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/listeMots.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
