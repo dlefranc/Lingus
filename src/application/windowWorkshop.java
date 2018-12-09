@@ -3,15 +3,24 @@ package application;
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ProgressIndicator;
 import javafx.stage.Stage;
 
 public class windowWorkshop extends func{
-	public Integer dailyQ = 0;
+	public double dailyQ;
+	public static Integer score;
 	
+	@FXML
+	private ProgressIndicator dailyCircle;
+	
+	public void initialize() {	
+		dailyCircle.setProgress(dailyQ);
+	}
 	
 	public void exe1(ActionEvent event) throws IOException{
 		Parent exe1View = FXMLLoader.load(getClass().getResource("workshop1.fxml"));
@@ -28,5 +37,13 @@ public class windowWorkshop extends func{
 		
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 		window.setScene(exe3Scene);
+	}
+	
+	public void giveUp(ActionEvent event) throws IOException{
+		Parent WorkshopView = FXMLLoader.load(getClass().getResource("windowWorkshop.fxml"));
+		Scene WorkshopScene = new Scene(WorkshopView);
+		
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(WorkshopScene);
 	}
 }

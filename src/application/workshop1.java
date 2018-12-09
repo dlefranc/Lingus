@@ -11,8 +11,10 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.ProgressIndicator;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextAlignment;
@@ -23,7 +25,6 @@ public class workshop1 extends windowWorkshop{
 	private Integer aleaQuest;
 	private Integer aleaRep;
 	private Integer nbFait;
-	public static Integer score;
 	
 	private String[] tabFait;
 	
@@ -48,6 +49,11 @@ public class workshop1 extends windowWorkshop{
 	@FXML
 	private Button rep1,rep2,rep3,rep4;
 	@FXML Label quest;
+	
+	@FXML
+	private Button next;
+	@FXML
+	private Button pass;
 
 	
 	public String[] tabAlea() {
@@ -120,6 +126,8 @@ public class workshop1 extends windowWorkshop{
 		nbFait = 0;
 		nbRound = 0;
 		
+		next.setDisable(true);
+		
 		rep1.setStyle("-fx-background-radius:30;");
 		rep2.setStyle("-fx-background-radius:30;");
 		rep3.setStyle("-fx-background-radius:30;");
@@ -142,6 +150,8 @@ public class workshop1 extends windowWorkshop{
 		if(rep4.getText()==tabExe[aleaQuest][5]) {
 			rep4.setStyle("-fx-background-color: #35a8e1; -fx-background-radius:30; -fx-opacity:0.99");
 		}
+		pass.setDisable(true);
+		next.setDisable(false);
 	}
 	
 	public void resetState(ActionEvent event) {
@@ -149,6 +159,9 @@ public class workshop1 extends windowWorkshop{
 		rep2.setDisable(false);
 		rep3.setDisable(false);
 		rep4.setDisable(false);
+		
+		next.setDisable(true);
+		pass.setDisable(false);
 		
 		rep1.setStyle("-fx-background-radius:30;");
 		rep2.setStyle("-fx-background-radius:30;");
@@ -247,10 +260,58 @@ public class workshop1 extends windowWorkshop{
 				resetState(event);
 				break;				
 			case 4:
+				if(dailyQ == 0.6) {
+					dailyQ = dailyQ + 0.4;
+				}
+				else if(dailyQ != 1) {
+					dailyQ = dailyQ + 0.3;
+				}
 				Parent endView = FXMLLoader.load(getClass().getResource("workshopRes.fxml"));
 				Scene endScene = new Scene(endView);
 				Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 				window.setScene(endScene);
+				break;
+			default:
+				progBar.setProgress(0);
+		}
+
+		nbRound ++;	
+	}
+	
+	public void pass(ActionEvent event) throws IOException{
+		
+		switch(nbRound) {
+			case 0:
+				progBar.setProgress(0.2);
+				afficherElem(tabAlea());
+				resetState(event);
+				break;
+			case 1:
+				progBar.setProgress(0.4);
+				afficherElem(tabAlea());
+				resetState(event);
+				break;
+			case 2:
+				progBar.setProgress(0.6);
+				afficherElem(tabAlea());
+				resetState(event);
+				break;
+			case 3:
+				progBar.setProgress(0.8);
+				afficherElem(tabAlea());
+				resetState(event);
+				break;				
+			case 4:
+				if(dailyQ == 0.6) {
+					dailyQ = dailyQ + 0.4;
+				}
+				else if(dailyQ != 1) {
+					dailyQ = dailyQ + 0.3;
+				}
+				Parent endView = FXMLLoader.load(getClass().getResource("workshopRes.fxml"));
+				Scene endScene = new Scene(endView);
+				Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+				window.setScene(endScene);		
 				break;
 			default:
 				progBar.setProgress(0);

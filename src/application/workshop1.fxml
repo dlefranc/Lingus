@@ -12,12 +12,12 @@
       <Pane layoutX="123.0" layoutY="46.0" prefHeight="923.0" prefWidth="1034.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
             <ProgressBar fx:id="progBar" layoutX="57.0" layoutY="42.0" prefHeight="18.0" prefWidth="920.0" progress="0.0" />
-            <Button layoutX="865.0" layoutY="852.0" mnemonicParsing="false" onAction="#exe" style="-fx-background-radius: 30;" text="Continuer">
+            <Button fx:id="next" layoutX="865.0" layoutY="852.0" mnemonicParsing="false" onAction="#exe" style="-fx-background-radius: 30;" text="Continuer">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
             </Button>
-            <Button layoutX="736.0" layoutY="852.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Passer">
+            <Button fx:id="pass" layoutX="736.0" layoutY="852.0" mnemonicParsing="false" onAction="#pass" style="-fx-background-radius: 30;" text="Passer">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
@@ -31,27 +31,27 @@
                   </Label>
                </children>
             </Pane>
-            <Hyperlink layoutX="57.0" layoutY="854.0" text="Abandonner">
+            <Hyperlink layoutX="57.0" layoutY="854.0" onAction="#giveUp" text="Abandonner">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
             </Hyperlink>
-            <Button fx:id="rep1" layoutX="150.0" layoutY="349.0" mnemonicParsing="false" onAction="#testRep1" prefHeight="70.0" prefWidth="160.0" style="-fx-background-radius: 30;" text="Button">
+            <Button fx:id="rep1" layoutX="140.0" layoutY="349.0" mnemonicParsing="false" onAction="#testRep1" prefHeight="70.0" prefWidth="175.0" style="-fx-background-radius: 30;" text="Button">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="rep2" layoutX="340.0" layoutY="351.0" mnemonicParsing="false" onAction="#testRep2" prefHeight="70.0" prefWidth="160.0" style="-fx-background-radius: 30;" text="Button">
+            <Button fx:id="rep2" layoutX="332.0" layoutY="351.0" mnemonicParsing="false" onAction="#testRep2" prefHeight="70.0" prefWidth="175.0" style="-fx-background-radius: 30;" text="Button">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="rep3" layoutX="530.0" layoutY="351.0" mnemonicParsing="false" onAction="#testRep3" prefHeight="70.0" prefWidth="160.0" style="-fx-background-radius: 30;" text="Button">
+            <Button fx:id="rep3" layoutX="522.0" layoutY="351.0" mnemonicParsing="false" onAction="#testRep3" prefHeight="70.0" prefWidth="175.0" style="-fx-background-radius: 30;" text="Button">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="rep4" layoutX="720.0" layoutY="351.0" mnemonicParsing="false" onAction="#testRep4" prefHeight="70.0" prefWidth="160.0" style="-fx-background-radius: 30;" text="Button">
+            <Button fx:id="rep4" layoutX="712.0" layoutY="351.0" mnemonicParsing="false" onAction="#testRep4" prefHeight="70.0" prefWidth="175.0" style="-fx-background-radius: 30;" text="Button">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>

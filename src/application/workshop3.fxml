@@ -12,11 +12,11 @@
       <Pane layoutX="123.0" layoutY="46.0" prefHeight="923.0" prefWidth="1034.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
             <ProgressBar fx:id="progBar" layoutX="57.0" layoutY="42.0" prefHeight="18.0" prefWidth="920.0" progress="0.0" />
-            <Button layoutX="865.0" layoutY="852.0" mnemonicParsing="false" onAction="#exe" style="-fx-background-radius: 30;" text="Continuer">
+            <Button fx:id="next" layoutX="865.0" layoutY="852.0" mnemonicParsing="false" onAction="#exe" style="-fx-background-radius: 30;" text="Continuer">
                <font>
                   <Font name="Candara" size="20.0" />
                </font></Button>
-            <Button layoutX="736.0" layoutY="852.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Passer">
+            <Button fx:id="pass" layoutX="736.0" layoutY="852.0" mnemonicParsing="false" onAction="#pass" style="-fx-background-radius: 30;" text="Passer">
                <font>
                   <Font name="Candara" size="20.0" />
                </font></Button>
@@ -47,7 +47,7 @@
                   <Font name="Candara" size="20.0" />
                </font>
             </Button>
-            <Hyperlink layoutX="57.0" layoutY="854.0" text="Abandonner">
+            <Hyperlink layoutX="57.0" layoutY="854.0" onAction="#giveUp" text="Abandonner">
                <font>
                   <Font name="Candara" size="20.0" />
                </font>

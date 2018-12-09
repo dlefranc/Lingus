@@ -10,7 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-public class workshopRes extends workshop3{
+public class workshopRes extends windowWorkshop{
 	@FXML
 	private Label nbRep;
 	@FXML
