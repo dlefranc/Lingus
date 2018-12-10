@@ -217,27 +217,27 @@
             </Label>
             <ImageView fitHeight="70.0" fitWidth="50.0" layoutX="215.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/BlackStar.png" />
+                  <Image url="@../resources/images/Stars/BlackStar.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="70.0" fitWidth="50.0" layoutX="165.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/BlackStar.png" />
+                  <Image url="@../resources/images/Stars/BlackStar.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="70.0" fitWidth="50.0" layoutX="115.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/Star.png" />
+                  <Image url="@../resources/images/Stars/Star.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="65.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/Star.png" />
+                  <Image url="@../resources/images/Stars/Star.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="15.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/Star.png" />
+                  <Image url="@../resources/images/Stars/Star.png" />
                </image>
             </ImageView>
          </children>
@@ -249,7 +249,7 @@
       </Hyperlink>
       <ImageView fitHeight="78.0" fitWidth="50.0" layoutX="910.0" layoutY="715.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/images/settings.png" />
+            <Image url="@../resources/images/settings.png" />
          </image>
       </ImageView>
    </children>

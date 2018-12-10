@@ -38,7 +38,7 @@ public class Main extends Application {
 		try {
 			//stage = primaryStage;
 			//Pane root = (Pane)FXMLLoader.load(getClass().getResource("test.fxml"));
-			Font.loadFont(getClass().getResourceAsStream("../../resources/fonts/CANDARA.TFF"), 14);
+			Font.loadFont(getClass().getResourceAsStream("../resources/fonts/CANDARA.TFF"), 14);
 			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowWorkshop.fxml"));
 			Scene scene = new Scene(root,1280,1024);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

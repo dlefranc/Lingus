@@ -50,27 +50,27 @@
             </Label>
             <ImageView fx:id="star1" fitHeight="48.0" fitWidth="55.0" layoutX="333.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/GoldStar.png" />
+                  <Image url="@../resources/images/Stars/GoldStar.png" />
                </image>
             </ImageView>
             <ImageView fx:id="star4" fitHeight="48.0" fitWidth="55.0" layoutX="573.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/BlackStar.png" />
+                  <Image url="@../resources/images/Stars/BlackStar.png" />
                </image>
             </ImageView>
             <ImageView fx:id="star2" fitHeight="48.0" fitWidth="55.0" layoutX="413.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/GoldStar.png" />
+                  <Image url="@../resources/images/Stars/GoldStar.png" />
                </image>
             </ImageView>
             <ImageView fx:id="star3" fitHeight="48.0" fitWidth="55.0" layoutX="493.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/GoldStar.png" />
+                  <Image url="@../resources/images/Stars/GoldStar.png" />
                </image>
             </ImageView>
             <ImageView fx:id="star5" fitHeight="48.0" fitWidth="55.0" layoutX="653.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Stars/BlackStar.png" />
+                  <Image url="@../resources/images/Stars/BlackStar.png" />
                </image>
             </ImageView>
          </children>

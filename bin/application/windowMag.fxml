@@ -17,27 +17,27 @@
          <children>
             <ImageView fx:id="mag1" fitHeight="220.0" fitWidth="150.0" layoutX="40.0" layoutY="150.0" onMouseClicked="#viewMag1" onMouseEntered="#lumOnMag1" onMouseExited="#lumOffMag1" pickOnBounds="true">
                <image>
-                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art1.jpg" />
+                  <Image url="@../resources/images/CoversMag/Eng/Art/Art1.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="mag2" fitHeight="220.0" fitWidth="150.0" layoutX="240.0" layoutY="150.0" onMouseEntered="#lumOnMag2" onMouseExited="#lumOffMag2" pickOnBounds="true">
                <image>
-                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art2.jpg" />
+                  <Image url="@../resources/images/CoversMag/Eng/Art/Art2.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="mag3" fitHeight="220.0" fitWidth="150.0" layoutX="440.0" layoutY="150.0" onMouseEntered="#lumOnMag3" onMouseExited="#lumOffMag3" pickOnBounds="true">
                <image>
-                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art3.jpg" />
+                  <Image url="@../resources/images/CoversMag/Eng/Art/Art3.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="mag4" fitHeight="220.0" fitWidth="150.0" layoutX="640.0" layoutY="150.0" onMouseEntered="#lumOnMag4" onMouseExited="#lumOffMag4" pickOnBounds="true">
                <image>
-                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art4.jpg" />
+                  <Image url="@../resources/images/CoversMag/Eng/Art/Art4.jpg" />
                </image>
             </ImageView>
             <ImageView fx:id="mag5" fitHeight="220.0" fitWidth="150.0" layoutX="840.0" layoutY="150.0" onMouseEntered="#lumOnMag5" onMouseExited="#lumOffMag5" pickOnBounds="true">
                <image>
-                  <Image url="@../../resources/images/CoversMag/Eng/Art/Art5.jpg" />
+                  <Image url="@../resources/images/CoversMag/Eng/Art/Art5.jpg" />
                </image>
             </ImageView>
             <Label layoutX="183.0" layoutY="22.0" text="Sélectionner votre magazine">
@@ -141,7 +141,7 @@
          <children>
             <ImageView fx:id="page" fitHeight="945.0" fitWidth="726.0" layoutX="264.0" layoutY="14.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-001.jpg" />
+                  <Image url="@../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-001.jpg" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -149,7 +149,7 @@
             </ImageView>
             <ImageView fx:id="left" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="412.0" onMouseClicked="#previousPage" pickOnBounds="true" preserveRatio="true" rotate="180.0">
                <image>
-                  <Image url="@../../resources/images/Mag/fleche.png" />
+                  <Image url="@../resources/images/Mag/fleche.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -157,7 +157,7 @@
             </ImageView>
             <ImageView fx:id="right" fitHeight="150.0" fitWidth="200.0" layoutX="1061.0" layoutY="413.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Mag/fleche.png" />
+                  <Image url="@../resources/images/Mag/fleche.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -165,7 +165,7 @@
             </ImageView>
             <ImageView fx:id="cross" fitHeight="48.0" fitWidth="80.0" layoutX="1147.0" layoutY="14.0" onMouseClicked="#closePage" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Mag/croix.png" />
+                  <Image url="@../resources/images/Mag/croix.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="HAND" />

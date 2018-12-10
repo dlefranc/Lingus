@@ -87,7 +87,7 @@
             </Label>
             <ImageView fitHeight="82.0" fitWidth="77.0" layoutX="520.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../resources/images/Flags/flagENG.png" />
+                  <Image url="@../resources/images/Flags/flagENG.png" />
                </image>
             </ImageView>
             <Button layoutX="508.0" layoutY="26.0" mnemonicParsing="false" style="-fx-background-radius: 50; -fx-background-color: white;" text="V">
@@ -176,7 +176,7 @@
       </Pane>
       <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="1094.0" layoutY="797.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/images/listeMots.png" />
+            <Image url="@../resources/images/listeMots.png" />
          </image>
       </ImageView>
    </children>

@@ -49,11 +49,11 @@ public class workshopRes extends windowWorkshop{
 	@SuppressWarnings("deprecation")
 	public void showStars(Integer score) throws IOException{
 		if(score < 1) {
-			image1 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image2 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image3 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image4 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image5 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
+			image1 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image2 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image3 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image4 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image5 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
 			star1.setImage(image1);
 			star2.setImage(image2);
 			star3.setImage(image3);
@@ -61,11 +61,11 @@ public class workshopRes extends windowWorkshop{
 			star5.setImage(image5);
 		}
 		else if(score < 2) {
-			image1 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image2 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image3 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image4 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image5 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
+			image1 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image2 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image3 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image4 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image5 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
 			star1.setImage(image1);
 			star2.setImage(image2);
 			star3.setImage(image3);
@@ -73,11 +73,11 @@ public class workshopRes extends windowWorkshop{
 			star5.setImage(image5);
 		}
 		else if(score < 3) {
-			image1 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image2 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image3 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image4 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image5 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
+			image1 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image2 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image3 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image4 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image5 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
 			star1.setImage(image1);
 			star2.setImage(image2);
 			star3.setImage(image3);
@@ -85,11 +85,11 @@ public class workshopRes extends windowWorkshop{
 			star5.setImage(image5);
 		}
 		else if(score < 4) {
-			image1 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image2 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image3 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image4 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
-			image5 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
+			image1 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image2 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image3 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image4 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
+			image5 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
 			star1.setImage(image1);
 			star2.setImage(image2);
 			star3.setImage(image3);
@@ -97,11 +97,11 @@ public class workshopRes extends windowWorkshop{
 			star5.setImage(image5);
 		}
 		else if(score < 5){
-			image1 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image2 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image3 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image4 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image5 = new Image(new File("@../../resources/images/Stars/BlackStar.png").toURL().toString());
+			image1 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image2 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image3 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image4 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image5 = new Image(new File("@../resources/images/Stars/BlackStar.png").toURL().toString());
 			star1.setImage(image1);
 			star2.setImage(image2);
 			star3.setImage(image3);
@@ -109,11 +109,11 @@ public class workshopRes extends windowWorkshop{
 			star5.setImage(image5);
 		}
 		else {
-			image1 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image2 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image3 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image4 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
-			image5 = new Image(new File("@../../resources/images/Stars/GoldStar.png").toURL().toString());
+			image1 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image2 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image3 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image4 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
+			image5 = new Image(new File("@../resources/images/Stars/GoldStar.png").toURL().toString());
 			star1.setImage(image1);
 			star2.setImage(image2);
 			star3.setImage(image3);
