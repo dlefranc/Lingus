@@ -12,15 +12,7 @@ import javafx.scene.control.ProgressIndicator;
 import javafx.stage.Stage;
 
 public class windowWorkshop extends func{
-	public double dailyQ;
 	public static Integer score;
-	
-	@FXML
-	private ProgressIndicator dailyCircle;
-	
-	public void initialize() {	
-		dailyCircle.setProgress(dailyQ);
-	}
 	
 	public void exe1(ActionEvent event) throws IOException{
 		Parent exe1View = FXMLLoader.load(getClass().getResource("workshop1.fxml"));

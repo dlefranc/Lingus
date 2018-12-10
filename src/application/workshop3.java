@@ -124,8 +124,6 @@ public class workshop3 extends windowWorkshop{
 		next.setDisable(true);
 		
 		afficherElem(tabAlea());
-		System.out.println(dailyQ);
-		
 	}
 	
 	public void goodRep() {	
@@ -246,12 +244,6 @@ public class workshop3 extends windowWorkshop{
 				resetState(event);
 				break;				
 			case 4:
-				if(dailyQ == 0.6) {
-					dailyQ = dailyQ + 0.4;
-				}
-				else if(dailyQ != 1) {
-					dailyQ = dailyQ + 0.3;
-				}
 				Parent endView = FXMLLoader.load(getClass().getResource("workshopRes.fxml"));
 				Scene endScene = new Scene(endView);
 				Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -288,14 +280,6 @@ public class workshop3 extends windowWorkshop{
 				resetState(event);
 				break;				
 			case 4:
-				System.out.println(dailyQ);
-				if(dailyQ == 0.6) {
-					dailyQ = dailyQ + 0.4;
-				}
-				else if(dailyQ != 1) {
-					dailyQ = dailyQ + 0.3;
-				}
-				System.out.println(dailyQ);
 				Parent endView = FXMLLoader.load(getClass().getResource("workshopRes.fxml"));
 				Scene endScene = new Scene(endView);
 				Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

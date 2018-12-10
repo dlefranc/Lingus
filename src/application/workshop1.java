@@ -260,12 +260,6 @@ public class workshop1 extends windowWorkshop{
 				resetState(event);
 				break;				
 			case 4:
-				if(dailyQ == 0.6) {
-					dailyQ = dailyQ + 0.4;
-				}
-				else if(dailyQ != 1) {
-					dailyQ = dailyQ + 0.3;
-				}
 				Parent endView = FXMLLoader.load(getClass().getResource("workshopRes.fxml"));
 				Scene endScene = new Scene(endView);
 				Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -302,12 +296,6 @@ public class workshop1 extends windowWorkshop{
 				resetState(event);
 				break;				
 			case 4:
-				if(dailyQ == 0.6) {
-					dailyQ = dailyQ + 0.4;
-				}
-				else if(dailyQ != 1) {
-					dailyQ = dailyQ + 0.3;
-				}
 				Parent endView = FXMLLoader.load(getClass().getResource("workshopRes.fxml"));
 				Scene endScene = new Scene(endView);
 				Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

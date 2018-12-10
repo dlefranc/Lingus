@@ -72,15 +72,15 @@ public class windowMag extends func{
 	public void switchCategorie(ActionEvent event) throws IOException{
 		newMag.setVisible(false);
 		choice = categorie.getSelectionModel().getSelectedItem().toString();
+		
 		switch (choice) {
 			case "Art":
-				
-				//image1 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art1.jpg").toURL().toString());
-				image2 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art2.jpg").toURL().toString());
-				image3 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art3.jpg").toURL().toString());
-				image4 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art4.jpg").toURL().toString());
-				image5 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art5.jpg").toURL().toString());
-				mag1.setImage(new Image("../resources/images/CoversMag/Eng/Art/Art1.jpg"));
+				image1 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art1.jpg").toURL().toString());
+				image2 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art2.jpg").toURL().toString());
+				image3 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art3.jpg").toURL().toString());
+				image4 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art4.jpg").toURL().toString());
+				image5 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art5.jpg").toURL().toString());
+				mag1.setImage(image1);
 				mag2.setImage(image2);
 				mag3.setImage(image3);
 				mag4.setImage(image4);
@@ -88,11 +88,11 @@ public class windowMag extends func{
 				break;
 				
 			case "Car":
-				image1 = new Image(new File("@../resources/images/CoversMag/Eng/Car/Car1.jpg").toURL().toString());
-				image2 = new Image(new File("@../resources/images/CoversMag/Eng/Car/Car2.jpg").toURL().toString());
-				image3 = new Image(new File("@../resources/images/CoversMag/Eng/Car/Car3.jpg").toURL().toString());
-				image4 = new Image(new File("@../resources/images/CoversMag/Eng/Car/Car4.jpg").toURL().toString());
-				image5 = new Image(new File("@../resources/images/CoversMag/Eng/Car/Car5.jpg").toURL().toString());
+				image1 = new Image(new File("src/resources/images/CoversMag/Eng/Car/Car1.jpg").toURL().toString());
+				image2 = new Image(new File("src/resources/images/CoversMag/Eng/Car/Car2.jpg").toURL().toString());
+				image3 = new Image(new File("src/resources/images/CoversMag/Eng/Car/Car3.jpg").toURL().toString());
+				image4 = new Image(new File("src/resources/images/CoversMag/Eng/Car/Car4.jpg").toURL().toString());
+				image5 = new Image(new File("src/resources/images/CoversMag/Eng/Car/Car5.jpg").toURL().toString());
 				mag1.setImage(image1);
 				mag2.setImage(image2);
 				mag3.setImage(image3);
@@ -101,11 +101,11 @@ public class windowMag extends func{
 				break;
 				
 			case "Food":
-				image1 = new Image(new File("@../resources/images/CoversMag/Eng/Food/Food1.jpg").toURL().toString());
-				image2 = new Image(new File("@../resources/images/CoversMag/Eng/Food/Food2.jpg").toURL().toString());
-				image3 = new Image(new File("@../resources/images/CoversMag/Eng/Food/Food3.jpg").toURL().toString());
-				image4 = new Image(new File("@../resources/images/CoversMag/Eng/Food/Food4.jpg").toURL().toString());
-				image5 = new Image(new File("@../resources/images/CoversMag/Eng/Food/Food5.jpg").toURL().toString());
+				image1 = new Image(new File("src/resources/images/CoversMag/Eng/Food/Food1.jpg").toURL().toString());
+				image2 = new Image(new File("src/resources/images/CoversMag/Eng/Food/Food2.jpg").toURL().toString());
+				image3 = new Image(new File("src/resources/images/CoversMag/Eng/Food/Food3.jpg").toURL().toString());
+				image4 = new Image(new File("src/resources/images/CoversMag/Eng/Food/Food4.jpg").toURL().toString());
+				image5 = new Image(new File("src/resources/images/CoversMag/Eng/Food/Food5.jpg").toURL().toString());
 				mag1.setImage(image1);
 				mag2.setImage(image2);
 				mag3.setImage(image3);
@@ -114,11 +114,11 @@ public class windowMag extends func{
 				break;
 				
 			case "Gossip":
-				image1 = new Image(new File("@../resources/images/CoversMag/Eng/Gossip/Gossip1.jpg").toURL().toString());
-				image2 = new Image(new File("@../resources/images/CoversMag/Eng/Gossip/Gossip2.jpg").toURL().toString());
-				image3 = new Image(new File("@../resources/images/CoversMag/Eng/Gossip/Gossip3.jpg").toURL().toString());
-				image4 = new Image(new File("@../resources/images/CoversMag/Eng/Gossip/Gossip4.jpg").toURL().toString());
-				image5 = new Image(new File("@../resources/images/CoversMag/Eng/Gossip/Gossip5.jpg").toURL().toString());
+				image1 = new Image(new File("src/resources/images/CoversMag/Eng/Gossip/Gossip1.jpg").toURL().toString());
+				image2 = new Image(new File("src/resources/images/CoversMag/Eng/Gossip/Gossip2.jpg").toURL().toString());
+				image3 = new Image(new File("src/resources/images/CoversMag/Eng/Gossip/Gossip3.jpg").toURL().toString());
+				image4 = new Image(new File("src/resources/images/CoversMag/Eng/Gossip/Gossip4.jpg").toURL().toString());
+				image5 = new Image(new File("src/resources/images/CoversMag/Eng/Gossip/Gossip5.jpg").toURL().toString());
 				mag1.setImage(image1);
 				mag2.setImage(image2);
 				mag3.setImage(image3);
@@ -127,11 +127,11 @@ public class windowMag extends func{
 				break;
 				
 			case "Sport":
-				image1 = new Image(new File("@../resources/images/CoversMag/Eng/Sport/Sport1.jpg").toURL().toString());
-				image2 = new Image(new File("@../resources/images/CoversMag/Eng/Sport/Sport2.jpg").toURL().toString());
-				image3 = new Image(new File("@../resources/images/CoversMag/Eng/Sport/Sport3.jpg").toURL().toString());
-				image4 = new Image(new File("@../resources/images/CoversMag/Eng/Sport/Sport4.jpg").toURL().toString());
-				image5 = new Image(new File("@../resources/images/CoversMag/Eng/Sport/Sport5.jpg").toURL().toString());
+				image1 = new Image(new File("src/resources/images/CoversMag/Eng/Sport/Sport1.jpg").toURL().toString());
+				image2 = new Image(new File("src/resources/images/CoversMag/Eng/Sport/Sport2.jpg").toURL().toString());
+				image3 = new Image(new File("src/resources/images/CoversMag/Eng/Sport/Sport3.jpg").toURL().toString());
+				image4 = new Image(new File("src/resources/images/CoversMag/Eng/Sport/Sport4.jpg").toURL().toString());
+				image5 = new Image(new File("src/resources/images/CoversMag/Eng/Sport/Sport5.jpg").toURL().toString());
 				mag1.setImage(image1);
 				mag2.setImage(image2);
 				mag3.setImage(image3);
@@ -140,11 +140,11 @@ public class windowMag extends func{
 				break;
 				
 			case "Teen":
-				image1 = new Image(new File("@../resources/images/CoversMag/Eng/Teen/Teen1.jpg").toURL().toString());
-				image2 = new Image(new File("@../resources/images/CoversMag/Eng/Teen/Teen2.jpg").toURL().toString());
-				image3 = new Image(new File("@../resources/images/CoversMag/Eng/Teen/Teen3.jpg").toURL().toString());
-				image4 = new Image(new File("@../resources/images/CoversMag/Eng/Teen/Teen4.jpg").toURL().toString());
-				image5 = new Image(new File("@../resources/images/CoversMag/Eng/Teen/Teen5.jpg").toURL().toString());
+				image1 = new Image(new File("src/resources/images/CoversMag/Eng/Teen/Teen1.jpg").toURL().toString());
+				image2 = new Image(new File("src/resources/images/CoversMag/Eng/Teen/Teen2.jpg").toURL().toString());
+				image3 = new Image(new File("src/resources/images/CoversMag/Eng/Teen/Teen3.jpg").toURL().toString());
+				image4 = new Image(new File("src/resources/images/CoversMag/Eng/Teen/Teen4.jpg").toURL().toString());
+				image5 = new Image(new File("src/resources/images/CoversMag/Eng/Teen/Teen5.jpg").toURL().toString());
 				mag1.setImage(image1);
 				mag2.setImage(image2);
 				mag3.setImage(image3);
@@ -153,11 +153,11 @@ public class windowMag extends func{
 				break;
 				
 			case "Travel NOUVEAU":
-				image1 = new Image(new File("@../resources/images/CoversMag/Eng/Travel/Travel1.jpg").toURL().toString());		
-				image2 = new Image(new File("@../resources/images/CoversMag/Eng/Travel/Travel2.jpg").toURL().toString());
-				image3 = new Image(new File("@../resources/images/CoversMag/Eng/Travel/Travel3.jpg").toURL().toString());
-				image4 = new Image(new File("@../resources/images/CoversMag/Eng/Travel/Travel4.jpg").toURL().toString());
-				image5 = new Image(new File("@../resources/images/CoversMag/Eng/Travel/Travel5.jpg").toURL().toString());
+				image1 = new Image(new File("src/resources/images/CoversMag/Eng/Travel/Travel1.jpg").toURL().toString());		
+				image2 = new Image(new File("src/resources/images/CoversMag/Eng/Travel/Travel2.jpg").toURL().toString());
+				image3 = new Image(new File("src/resources/images/CoversMag/Eng/Travel/Travel3.jpg").toURL().toString());
+				image4 = new Image(new File("src/resources/images/CoversMag/Eng/Travel/Travel4.jpg").toURL().toString());
+				image5 = new Image(new File("src/resources/images/CoversMag/Eng/Travel/Travel5.jpg").toURL().toString());
 				mag1.setImage(image1);
 				mag2.setImage(image2);
 				mag3.setImage(image3);
@@ -167,11 +167,11 @@ public class windowMag extends func{
 				break;
 				
 			case "Wedding":
-				image1 = new Image(new File("@../resources/images/CoversMag/Eng/Wedding/Wedding1.jpg").toURL().toString());
-				image2 = new Image(new File("@../resources/images/CoversMag/Eng/Wedding/Wedding2.jpg").toURL().toString());
-				image3 = new Image(new File("@../resources/images/CoversMag/Eng/Wedding/Wedding3.jpg").toURL().toString());
-				image4 = new Image(new File("@../resources/images/CoversMag/Eng/Wedding/Wedding4.jpg").toURL().toString());
-				image5 = new Image(new File("@../resources/images/CoversMag/Eng/Wedding/Wedding5.jpg").toURL().toString());
+				image1 = new Image(new File("src/resources/images/CoversMag/Eng/Wedding/Wedding1.jpg").toURL().toString());
+				image2 = new Image(new File("src/resources/images/CoversMag/Eng/Wedding/Wedding2.jpg").toURL().toString());
+				image3 = new Image(new File("src/resources/images/CoversMag/Eng/Wedding/Wedding3.jpg").toURL().toString());
+				image4 = new Image(new File("src/resources/images/CoversMag/Eng/Wedding/Wedding4.jpg").toURL().toString());
+				image5 = new Image(new File("src/resources/images/CoversMag/Eng/Wedding/Wedding5.jpg").toURL().toString());
 				mag1.setImage(image1);
 				mag2.setImage(image2);
 				mag3.setImage(image3);
@@ -180,17 +180,18 @@ public class windowMag extends func{
 				break;
 				
 			default:
-				image1 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art1.jpg").toURL().toString());
-				image2 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art2.jpg").toURL().toString());
-				image3 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art3.jpg").toURL().toString());
-				image4 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art4.jpg").toURL().toString());
-				image5 = new Image(new File("@../resources/images/CoversMag/Eng/Art/Art5.jpg").toURL().toString());
+				image1 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art1.jpg").toURL().toString());
+				image2 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art2.jpg").toURL().toString());
+				image3 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art3.jpg").toURL().toString());
+				image4 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art4.jpg").toURL().toString());
+				image5 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art5.jpg").toURL().toString());
 				mag1.setImage(image1);
 				mag2.setImage(image2);
 				mag3.setImage(image3);
 				mag4.setImage(image4);
 				mag5.setImage(image5);
 		}
+		System.out.println(image1.impl_getUrl().toString());
 	}
 
 	
@@ -232,14 +233,15 @@ public class windowMag extends func{
 		
 		countPage ++;
 		if(countPage < 10) {
-			viewMag = new Image(new File("@../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-00" + countPage + ".jpg").toURL().toString());
+			viewMag = new Image(new File("src/resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-00" + countPage + ".jpg").toURL().toString());
 		}
 		else {
-			viewMag = new Image(new File("@../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-0" + countPage + ".jpg").toURL().toString());			
+			viewMag = new Image(new File("src/resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-0" + countPage + ".jpg").toURL().toString());			
 		}
 
 		page.setImage(viewMag);
 		if(countPage == 42) {
+			page.setDisable(true);
 			right.setVisible(false);
 		}
 		left.setVisible(true);
@@ -250,10 +252,10 @@ public class windowMag extends func{
 	public void previousPage() throws MalformedURLException {
 		countPage --;
 		if(countPage < 10) {
-			viewMag = new Image(new File("@../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-00" + countPage + ".jpg").toURL().toString());
+			viewMag = new Image(new File("src/resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-00" + countPage + ".jpg").toURL().toString());
 		}
 		else {
-			viewMag = new Image(new File("@../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-0" + countPage + ".jpg").toURL().toString());			
+			viewMag = new Image(new File("src/resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-0" + countPage + ".jpg").toURL().toString());			
 		}
 
 		if(countPage == 1) {
@@ -261,6 +263,7 @@ public class windowMag extends func{
 		}
 		page.setImage(viewMag);
 		right.setVisible(true);
+		page.setDisable(false);
 	}
 	
 	@SuppressWarnings("deprecation")
@@ -268,7 +271,7 @@ public class windowMag extends func{
 		countPage = 1;
 		right.setVisible(true);
 		reader.setVisible(false);
-		viewMag = new Image(new File("@../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-00" + countPage + ".jpg").toURL().toString());
+		viewMag = new Image(new File("src/resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-00" + countPage + ".jpg").toURL().toString());
 		page.setImage(viewMag);
 		
 	}
