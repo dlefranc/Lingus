@@ -118,7 +118,8 @@
                   <Font name="Chandas" size="55.0" />
                </font>
             </Label>
-            <ComboBox fx:id="categorie" layoutX="415.0" layoutY="152.0" onAction="#switchCategorie" prefWidth="200.0" promptText="Art" style="-fx-background-color: #e9e9e9; -fx-effect: dropshadow(three-pass-box,  #10a3e7, 6, 0.5, 0, 0);" visibleRowCount="8">
+            <ComboBox fx:id="categorie" layoutX="415.0" layoutY="152.0" onAction="#switchCategorie" prefWidth="200.0" promptText="Art" 
+            		style="-fx-background-color: #e9e9e9; -fx-effect: dropshadow(three-pass-box, #10a3e7, 2, 0.5, 0, 0);" visibleRowCount="8">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -163,7 +164,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <ImageView fx:id="cross" fitHeight="48.0" fitWidth="80.0" layoutX="1147.0" layoutY="14.0" onMouseClicked="#closePage" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="48.0" fitWidth="80.0" layoutX="1147.0" layoutY="14.0" onMouseClicked="#closePage" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../resources/images/Mag/croix.png" />
                </image>

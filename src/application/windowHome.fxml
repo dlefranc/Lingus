@@ -109,7 +109,7 @@
             <Font name="Candara" size="24.0" />
          </font>
       </Hyperlink>
-      <Hyperlink layoutX="944.0" layoutY="810.0" text="Liste de mots">
+      <Hyperlink layoutX="954.0" layoutY="806.0" text="Liste de mots">
          <font>
             <Font name="Candara" size="24.0" />
          </font>
@@ -174,7 +174,7 @@
             </Button>
          </children>
       </Pane>
-      <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="1094.0" layoutY="797.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="897.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/images/listeMots.png" />
          </image>

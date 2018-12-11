@@ -4,7 +4,6 @@ package application;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.text.DecimalFormat;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -191,7 +190,6 @@ public class windowMag extends func{
 				mag4.setImage(image4);
 				mag5.setImage(image5);
 		}
-		System.out.println(image1.impl_getUrl().toString());
 	}
 
 	
