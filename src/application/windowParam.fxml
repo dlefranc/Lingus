@@ -84,7 +84,7 @@
                   <Font name="Candara" size="24.0" />
                </font>
             </Label>
-            <TextField id="userProf" fx:id="userProf" layoutX="295.0" layoutY="80.0" prefHeight="40.0" prefWidth="250.0" style="-fx-background-radius: 25;" text="Pseudo utilisateur">
+            <TextField id="userProf" fx:id="userProf" layoutX="295.0" layoutY="80.0" prefHeight="40.0" prefWidth="250.0" style="-fx-background-radius: 25;" text="Pseudo">
                <font>
                   <Font name="Candara" size="24.0" />
                </font>
