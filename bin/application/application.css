@@ -8,25 +8,4 @@
     
 }
 
-@font-face{
-	
-	font-family:CANDARA;
-	src: url(../resources/fonts/CANDARA.TFF);
-}
-
-/* 
-.lab1 {
-    -fx-font-family: "CANDARA";
-    -fx-font-size: 50;
-}
-
-.lab2 {
-    -fx-font-family: "CANDARA";
-    -fx-font-size: 50;
-}
-*/
-#lab{
-	-fx-font-family: CANDARA;
-	-fx-font-size: 50;
-}
 

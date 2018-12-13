@@ -193,10 +193,5 @@
                </font>
             </Button>
          </children></Pane>
-      <Label id="lab" fx:id="labTest" layoutX="874.0" layoutY="643.0" stylesheets="@application.css" text="azertyuiop">
-         <font>
-            <Font size="41.0" />
-         </font></Label>
-      <Button fx:id="btn" layoutX="860.0" layoutY="728.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="289.0" text="Button" />
    </children>
 </Pane>
