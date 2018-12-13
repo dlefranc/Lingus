@@ -18,7 +18,7 @@
          <children>
             <Button fx:id="titleBtn" layoutX="84.0" mnemonicParsing="false" onAction="#sceneHome" style="-fx-background-color: #35a8e1;" text="Lingus" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="36.0" />
+                  <Font name="Linux Libertine G Regular" size="36.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -26,7 +26,7 @@
             </Button>
             <Button fx:id="decoBtn" layoutX="1029.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneConnect" onMouseEntered="#mouseOverDeco" onMouseExited="#mouseExitDeco" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Deconnexion" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -34,7 +34,7 @@
             </Button>
             <Button fx:id="homeBtn" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneHome" onMouseEntered="#mouseOverHome" onMouseExited="#mouseExitHome" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Accueil" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -42,7 +42,7 @@
             </Button>
             <Button fx:id="magBtn" layoutX="358.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneMag" onMouseEntered="#mouseOverMag" onMouseExited="#mouseExitMag" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Magazine" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -50,7 +50,7 @@
             </Button>
             <Button fx:id="workshopBtn" layoutX="485.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneWorkshop" onMouseEntered="#mouseOverWorkshop" onMouseExited="#mouseExitWorkshop" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Atelier" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -58,7 +58,7 @@
             </Button>
             <Button fx:id="toolsBtn" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneTools" onMouseEntered="#mouseOverTools" style="-fx-background-radius: 30; -fx-background-color: white;" text="Outils" textFill="#35a8e1">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -66,7 +66,7 @@
             </Button>
             <Button fx:id="profBtn" layoutX="907.0" layoutY="16.0" mnemonicParsing="false" onAction="#sceneProfile" onMouseEntered="#mouseOverProf" onMouseExited="#mouseExitProf" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Profil" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -74,11 +74,11 @@
             </Button>
          </children>
       </Pane>
-      <Pane layoutX="135.0" layoutY="152.0" prefHeight="246.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+      <Pane layoutX="125.0" layoutY="142.0" prefHeight="246.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
             <Label layoutX="275.0" layoutY="25.0" text="Sélectionner un outil">
                <font>
-                  <Font name="Candara" size="55.0" />
+                  <Font name="Linux Libertine G Regular" size="55.0" />
                </font>
             </Label>
             <ComboBox fx:id="tools" layoutX="415.0" layoutY="152.0" onAction="#switchTools" prefWidth="200.0" promptText="Verbes irréguliers" style="-fx-background-color: #e9e9e9; -fx-effect: dropshadow(three-pass-box, #10a3e7, 2, 0.5, 0, 0);" visibleRowCount="2">
@@ -94,7 +94,7 @@
             </ComboBox>
          </children>
       </Pane>
-      <Pane layoutX="135.0" layoutY="464.0" prefHeight="420.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+      <Pane layoutX="125.0" layoutY="454.0" prefHeight="420.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
             <VBox fx:id="vbox" maxWidth="1017.0" prefHeight="420.0" prefWidth="1030.0">
                <children>
@@ -102,22 +102,22 @@
                      <children>
                         <Label layoutX="40.0" layoutY="15.0" text="Base verbale">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="325.0" layoutY="15.0" text="Prétérit">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="543.0" layoutY="15.0" text="Participe passé">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="840.0" layoutY="15.0" text="Traduction">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                      </children>
@@ -126,22 +126,22 @@
                      <children>
                         <Label layoutX="40.0" layoutY="16.0" text="Arise">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="325.0" layoutY="16.0" text="Arose">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="543.0" layoutY="15.0" text="Arisen">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="840.0" layoutY="16.0" text="S'élever">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                      </children>
@@ -150,22 +150,22 @@
                      <children>
                         <Label layoutX="40.0" layoutY="15.0" text="Awake">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="325.0" layoutY="15.0" text="Awoke">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="543.0" layoutY="15.0" text="Awoken">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="840.0" layoutY="15.0" text="S'éveiller">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                      </children>
@@ -174,22 +174,22 @@
                      <children>
                         <Label layoutX="40.0" layoutY="11.0" text="Be">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="325.0" layoutY="13.0" text="Was,Were">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="543.0" layoutY="15.0" text="Been">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="840.0" layoutY="13.0" text="Être">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                      </children>
@@ -198,22 +198,22 @@
                      <children>
                         <Label layoutX="40.0" layoutY="14.0" text="Bear">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="325.0" layoutY="14.0" text="Bore">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="543.0" layoutY="15.0" text="Borne">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="840.0" layoutY="14.0" text="Supporter">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                      </children>
@@ -222,22 +222,22 @@
                      <children>
                         <Label layoutX="40.0" layoutY="14.0" text="Beat">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="325.0" layoutY="19.0" text="Beat">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="543.0" layoutY="14.0" text="Beaten">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="840.0" layoutY="14.0" text="Battre">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                      </children>
@@ -246,22 +246,22 @@
                      <children>
                         <Label layoutX="40.0" layoutY="14.0" text="Become">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="325.0" layoutY="20.0" text="Became">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="543.0" layoutY="14.0" text="Become">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                         <Label layoutX="840.0" layoutY="14.0" text="Devenir">
                            <font>
-                              <Font name="Candara" size="26.0" />
+                              <Font name="Linux Libertine G Regular" size="26.0" />
                            </font>
                         </Label>
                      </children>
@@ -275,14 +275,14 @@
             </ScrollBar>
             <Pane fx:id="tradPane" prefHeight="420.0" prefWidth="1030.0" visible="false">
                <children>
-                  <Button layoutX="459.0" layoutY="337.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Continuer">
+                  <Button layoutX="459.0" layoutY="337.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Traduire">
                      <font>
-                        <Font name="Candara" size="20.0" />
+                        <Font name="Linux Libertine G Regular" size="20.0" />
                      </font>
                   </Button>
                   <TextArea layoutX="75.0" layoutY="106.0" prefHeight="180.0" prefWidth="380.0" promptText="Saisissez votre mot ou texte">
                      <font>
-                        <Font name="Candara" size="20.0" />
+                        <Font name="Linux Libertine G Regular" size="20.0" />
                      </font>
                   </TextArea>
                   <TextArea editable="false" layoutX="575.0" layoutY="106.0" prefHeight="180.0" prefWidth="380.0" />

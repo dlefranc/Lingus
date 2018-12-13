@@ -22,65 +22,65 @@
          <children>
             <Label layoutX="2.0" layoutY="166.0" text="Progression :">
                <font>
-                  <Font name="Candara" size="30.0" />
+                  <Font name="Linux Libertine G Regular" size="30.0" />
                </font>
             </Label>
             <Separator layoutX="52.0" layoutY="664.0" prefHeight="0.0" prefWidth="496.0" style="-fx-background-color: #35a8e1;" />
             <Label layoutX="84.0" layoutY="709.0" text="Dernière connexion :">
                <font>
-                  <Font name="Candara" size="30.0" />
+                  <Font name="Linux Libertine G Regular" size="30.0" />
                </font>
             </Label>
             <Label layoutX="353.0" layoutY="709.0" text="10">
                <font>
-                  <Font name="Candara" size="30.0" />
+                  <Font name="Linux Libertine G Regular" size="30.0" />
                </font>
             </Label>
             <Label layoutX="386.0" layoutY="709.0" text="Décembre">
                <font>
-                  <Font name="Candara" size="30.0" />
+                  <Font name="Linux Libertine G Regular" size="30.0" />
                </font>
             </Label>
             <ProgressBar layoutX="57.0" layoutY="256.0" prefHeight="18.0" prefWidth="496.0" progress="0.25" />
             <Label layoutX="170.0" layoutY="274.0" text="25%">
                <font>
-                  <Font name="Candara" size="16.0" />
+                  <Font name="Linux Libertine G Regular" size="16.0" />
                </font>
             </Label>
-            <Label layoutX="67.0" layoutY="344.0" text="Nombre de mots à maîtriser avant montée de niveau :">
+            <Label layoutX="39.0" layoutY="342.0" text="Nombre de mots à maîtriser avant montée de niveau :">
                <font>
-                  <Font name="Candara" size="20.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
             </Label>
-            <Label layoutX="523.0" layoutY="344.0" text="10">
+            <Label layoutX="527.0" layoutY="342.0" text="10">
                <font>
-                  <Font name="Candara" size="20.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
             </Label>
-            <Label layoutX="531.0" layoutY="229.0" text="Expert">
+            <Label layoutX="526.0" layoutY="226.0" text="Expert">
                <font>
-                  <Font name="Candara" size="16.0" />
+                  <Font name="Linux Libertine G Regular" size="20.0" />
                </font>
             </Label>
             <Separator layoutX="57.0" layoutY="414.0" prefHeight="0.0" prefWidth="496.0" style="-fx-background-color: #35a8e1;" />
             <Label layoutY="461.0" text="Derniers mots maîtrisés :">
                <font>
-                  <Font name="Candara" size="30.0" />
+                  <Font name="Linux Libertine G Regular" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="131.0" layoutY="558.0" text="Check">
+            <Label layoutX="125.0" layoutY="558.0" text="Check">
                <font>
-                  <Font name="Candara" size="20.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
             </Label>
-            <Label layoutX="269.0" layoutY="558.0" text="Capacity">
+            <Label layoutX="265.0" layoutY="558.0" text="Capacity">
                <font>
-                  <Font name="Candara" size="20.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
             </Label>
-            <Label layoutX="429.0" layoutY="558.0" text="Plant">
+            <Label layoutX="424.0" layoutY="558.0" text="Plant">
                <font>
-                  <Font name="Candara" size="20.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
             </Label>
             <ImageView fitHeight="82.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
@@ -102,9 +102,9 @@
          </children></Pane>
       <Pane layoutX="860.0" layoutY="150.0" prefHeight="350.0" prefWidth="280.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <Label layoutX="87.0" text="Pseudo">
+            <Label layoutX="91.0" text="Pseudo">
                <font>
-                  <Font name="Candara" size="34.0" />
+                  <Font name="Linux Libertine G Regular" size="34.0" />
                </font>
             </Label>
             <ImageView fitHeight="204.0" fitWidth="201.0" layoutX="40.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
@@ -115,19 +115,19 @@
          </children></Pane>
       <Hyperlink layoutX="838.0" layoutY="675.0" text="Apprendre une nouvelle langue">
          <font>
-            <Font name="Candara" size="24.0" />
+            <Font name="Linux Libertine G Regular" size="24.0" />
          </font>
       </Hyperlink>
-      <Hyperlink layoutX="954.0" layoutY="806.0" text="Liste de mots">
+      <Hyperlink layoutX="957.0" layoutY="808.0" text="Liste de mots">
          <font>
-            <Font name="Candara" size="24.0" />
+            <Font name="Linux Libertine G Regular" size="24.0" />
          </font>
       </Hyperlink>
       <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-background-color: #35a8e1;">
          <children>
             <Button fx:id="titleBtn" layoutX="84.0" mnemonicParsing="false" onAction="#sceneHome" style="-fx-background-color: #35a8e1;" text="Lingus" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="36.0" />
+                  <Font name="Linux Libertine G Regular" size="36.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -135,7 +135,7 @@
             </Button>
             <Button fx:id="decoBtn" layoutX="1029.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneConnect" onMouseEntered="#mouseOverDeco" onMouseExited="#mouseExitDeco" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Deconnexion" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -143,7 +143,7 @@
             </Button>
             <Button fx:id="homeBtn" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneHome" onMouseEntered="#mouseOverHome" style="-fx-background-radius: 30; -fx-background-color: white;" text="Accueil" textFill="#35a8e1">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -151,7 +151,7 @@
             </Button>
             <Button fx:id="magBtn" layoutX="358.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneMag" onMouseEntered="#mouseOverMag" onMouseExited="#mouseExitMag" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Magazine" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -159,7 +159,7 @@
             </Button>
             <Button fx:id="workshopBtn" layoutX="485.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneWorkshop" onMouseEntered="#mouseOverWorkshop" onMouseExited="#mouseExitWorkshop" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Atelier" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -167,7 +167,7 @@
             </Button>
             <Button fx:id="toolsBtn" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneTools" onMouseEntered="#mouseOverTools" onMouseExited="#mouseExitTools" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Outils" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -175,7 +175,7 @@
             </Button>
             <Button fx:id="profBtn" layoutX="907.0" layoutY="16.0" mnemonicParsing="false" onAction="#sceneProfile" onMouseEntered="#mouseOverProf" onMouseExited="#mouseExitProf" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Profil" textFill="WHITE">
                <font>
-                  <Font name="Candara" size="22.0" />
+                  <Font name="Linux Libertine G Regular" size="22.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -183,7 +183,7 @@
             </Button>
          </children>
       </Pane>
-      <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="897.0" layoutY="793.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="67.0" fitWidth="72.0" layoutX="900.0" layoutY="795.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../resources/images/listeMots.png" />
          </image>
