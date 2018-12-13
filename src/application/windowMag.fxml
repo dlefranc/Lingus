@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.String?>
 <?import javafx.collections.FXCollections?>
 <?import javafx.scene.Cursor?>
@@ -11,7 +18,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowMag">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowMag">
    <children>
       <Pane layoutX="125.0" layoutY="454.0" prefHeight="420.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
@@ -40,86 +47,25 @@
                   <Image url="@../resources/images/CoversMag/Eng/Art/Art5.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="183.0" layoutY="22.0" text="Sélectionner votre magazine">
+            <Label layoutX="158.0" layoutY="22.0" text="Sélectionner votre magazine">
                <font>
-                  <Font name="Linux Libertine G Regular" size="55.0" />
+                  <Font name="Ubuntu" size="55.0" />
                </font>
             </Label>
             <Label fx:id="newMag" layoutX="71.0" layoutY="381.0" text="NOUVEAU" visible="false">
                <font>
-                  <Font name="Linux Libertine G Regular" size="20.0" />
+                  <Font name="Ubuntu" size="20.0" />
                </font>
             </Label>
          </children></Pane>
-      <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-background-color: #35a8e1;">
-         <children>
-            <Button fx:id="titleBtn" layoutX="84.0" mnemonicParsing="false" onAction="#sceneHome" style="-fx-background-color: #35a8e1;" text="Lingus" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="36.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="decoBtn" layoutX="1029.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneConnect" onMouseEntered="#mouseOverDeco" onMouseExited="#mouseExitDeco" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Deconnexion" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="homeBtn" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneHome" onMouseEntered="#mouseOverHome" onMouseExited="#mouseExitHome" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Accueil" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="magBtn" layoutX="358.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneMag" onMouseEntered="#mouseOverMag" style="-fx-background-radius: 30; -fx-background-color: white;" text="Magazine" textFill="#35a8e1">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="workshopBtn" layoutX="485.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneWorkshop" onMouseEntered="#mouseOverWorkshop" onMouseExited="#mouseExitWorkshop" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Atelier" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="toolsBtn" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneTools" onMouseEntered="#mouseOverTools" onMouseExited="#mouseExitTools" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Outils" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="profBtn" layoutX="907.0" layoutY="16.0" mnemonicParsing="false" onAction="#sceneProfile" onMouseEntered="#mouseOverProf" onMouseExited="#mouseExitProf" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Profil" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-         </children>
-      </Pane>
       <Pane layoutX="125.0" layoutY="142.0" prefHeight="246.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <Label layoutX="227.0" layoutY="25.0" text="Sélectionner la catégorie">
+            <Label layoutX="204.0" layoutY="25.0" text="Sélectionner la catégorie">
                <font>
-                  <Font name="Linux Libertine G Regular" size="55.0" />
+                  <Font name="Ubuntu" size="55.0" />
                </font>
             </Label>
-            <ComboBox fx:id="categorie" layoutX="415.0" layoutY="152.0" onAction="#switchCategorie" prefWidth="200.0" promptText="Art" 
-            		style="-fx-background-color: #e9e9e9; -fx-effect: dropshadow(three-pass-box, #10a3e7, 2, 0.5, 0, 0);" visibleRowCount="8">
+            <ComboBox fx:id="categorie" layoutX="415.0" layoutY="152.0" onAction="#switchCategorie" prefWidth="200.0" promptText="Art" style="-fx-background-color: #e9e9e9; -fx-effect: dropshadow(three-pass-box, #10a3e7, 2, 0.5, 0, 0);" visibleRowCount="8">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -172,6 +118,66 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
+         </children>
+      </Pane>
+      <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-background-color: #35a8e1;">
+         <children>
+            <Button fx:id="titleBtn" layoutX="84.0" mnemonicParsing="false" onAction="#sceneHome" style="-fx-background-color: #35a8e1;" text="Lingus" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="decoBtn" layoutX="1024.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneConnect" onMouseEntered="#mouseOverDeco" onMouseExited="#mouseExitDeco" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Deconnexion" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeBtn" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneHome" onMouseEntered="#mouseOverHome" onMouseExited="#mouseExitHome" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Accueil" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="magBtn" layoutX="371.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneMag" style="-fx-background-radius: 30; -fx-background-color: white;" text="Magazine" textFill="#35a8e1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="workshopBtn" layoutX="508.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneWorkshop" onMouseEntered="#mouseOverWorkshop" onMouseExited="#mouseExitWorkshop" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Atelier" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="toolsBtn" layoutX="619.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneTools" onMouseEntered="#mouseOverTools" onMouseExited="#mouseExitTools" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Outils" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="profBtn" layoutX="923.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneProfile" onMouseEntered="#mouseOverProf" onMouseExited="#mouseExitProf" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Profil" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

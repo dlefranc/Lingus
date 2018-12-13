@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
@@ -10,182 +16,122 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowProfile">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowProfile">
    <children>
-      <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-background-color: #35a8e1;">
-         <children>
-            <Button fx:id="titleBtn" layoutX="84.0" mnemonicParsing="false" onAction="#sceneHome" style="-fx-background-color: #35a8e1;" text="Lingus" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="36.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="decoBtn" layoutX="1029.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneConnect" onMouseEntered="#mouseOverDeco" onMouseExited="#mouseExitDeco" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Deconnexion" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="homeBtn" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneHome" onMouseEntered="#mouseOverHome" onMouseExited="#mouseExitHome" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Accueil" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="magBtn" layoutX="358.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneMag" onMouseEntered="#mouseOverMag" onMouseExited="#mouseExitMag" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Magazine" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="workshopBtn" layoutX="485.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneWorkshop" onMouseEntered="#mouseOverWorkshop" onMouseExited="#mouseExitWorkshop" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Atelier" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="toolsBtn" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneTools" onMouseEntered="#mouseOverTools" onMouseExited="#mouseExitTools" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Outils" textFill="WHITE">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="profBtn" layoutX="907.0" layoutY="16.0" mnemonicParsing="false" onAction="#sceneProfile" onMouseEntered="#mouseOverProf" style="-fx-background-radius: 30; -fx-background-color: White;" text="Profil" textFill="#35a8e1">
-               <font>
-                  <Font name="Linux Libertine G Regular" size="22.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-         </children>
-      </Pane>
       <Pane layoutX="110.0" layoutY="110.0" prefHeight="860.0" prefWidth="680.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
       <Pane layoutX="830.0" layoutY="110.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
       <Pane layoutX="150.0" layoutY="150.0" prefHeight="780.0" prefWidth="600.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
             <Label layoutY="-4.0" text="Mots :">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="470.0" layoutY="-4.0" text="Maîtrisés">
+            <Label layoutX="467.0" layoutY="-3.0" text="Maîtrisés">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="253.0" layoutY="-4.0" text="Connus">
+            <Label layoutX="255.0" layoutY="-3.0" text="Connus">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
             <Label layoutX="268.0" layoutY="59.0" text="22">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
             <Label layoutX="300.0" layoutY="59.0" text="/">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
             <Label layoutX="309.0" layoutY="59.0" text="45">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
             <Label layoutX="494.0" layoutY="59.0" text="10">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
             <Label layoutX="535.0" layoutY="59.0" text="45">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
             <Label layoutX="524.0" layoutY="59.0" text="/">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
             <Separator layoutX="57.0" layoutY="151.0" prefHeight="0.0" prefWidth="496.0" style="-fx-background-color: #35a8e1;" />
-            <Label layoutX="119.0" layoutY="372.0" text="Nombre de magazines lus :">
+            <Label layoutX="114.0" layoutY="373.0" text="Nombre de magazines lus :">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="100.0" layoutY="225.0" text="Outil le plus utilisé :">
+            <Label layoutX="84.0" layoutY="224.0" text="Outil le plus utilisé :">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="355.0" layoutY="225.0" text="Dictionnaire">
+            <Label layoutX="360.0" layoutY="224.0" text="Dictionnaire">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
             <Separator layoutX="53.0" layoutY="325.0" prefHeight="0.0" prefWidth="496.0" style="-fx-background-color: #35a8e1;" />
-            <Label layoutX="459.0" layoutY="372.0" text="6">
+            <Label layoutX="488.0" layoutY="373.0" text="6">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="148.0" layoutY="442.0" text="Catégorie la plus lue :">
+            <Label layoutX="135.0" layoutY="443.0" text="Catégorie la plus lue :">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="425.0" layoutY="442.0" text="Art">
+            <Label layoutX="432.0" layoutY="443.0" text="Art">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
             <Separator layoutX="49.0" layoutY="541.0" prefHeight="0.0" prefWidth="496.0" style="-fx-background-color: #35a8e1;" />
-            <Label layoutX="459.0" layoutY="612.0" text="9">
+            <Label layoutX="491.0" layoutY="612.0" text="9">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="111.0" layoutY="612.0" text="Nombre d'exercice réalisés :">
+            <Label layoutX="102.0" layoutY="612.0" text="Nombre d'exercice réalisés :">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="111.0" layoutY="681.0" text="Exercice préféré :">
+            <Label layoutX="98.0" layoutY="682.0" text="Exercice préféré :">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="340.0" layoutY="681.0" text="Texte à trou">
+            <Label layoutX="347.0" layoutY="682.0" text="Texte à trou">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
          </children>
       </Pane>
       <Pane layoutX="860.0" layoutY="150.0" prefHeight="350.0" prefWidth="280.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
-            <Label layoutX="96.0" layoutY="-4.0" text="Niveau">
+            <Label layoutX="93.0" text="Niveau">
                <font>
-                  <Font name="Linux Libertine G Regular" size="30.0" />
+                  <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Label fx:id="level" layoutX="29.0" layoutY="94.0" text="Intermédiaire">
+            <Label fx:id="level" layoutX="17.0" layoutY="94.0" text="Intermédiaire">
                <font>
-                  <Font name="Linux Libertine G Regular" size="40.0" />
+                  <Font name="Ubuntu" size="40.0" />
                </font>
             </Label>
             <ImageView fitHeight="70.0" fitWidth="50.0" layoutX="215.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
@@ -217,7 +163,7 @@
       </Pane>
       <Hyperlink layoutX="963.0" layoutY="718.0" onAction="#viewParam" text="Paramètres">
          <font>
-            <Font name="Linux Libertine G Regular" size="24.0" />
+            <Font name="Ubuntu" size="24.0" />
          </font>
       </Hyperlink>
       <ImageView fitHeight="78.0" fitWidth="50.0" layoutX="913.0" layoutY="713.0" pickOnBounds="true" preserveRatio="true">
@@ -225,5 +171,65 @@
             <Image url="@../resources/images/settings.png" />
          </image>
       </ImageView>
+      <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-background-color: #35a8e1;">
+         <children>
+            <Button fx:id="titleBtn" layoutX="84.0" mnemonicParsing="false" onAction="#sceneHome" style="-fx-background-color: #35a8e1;" text="Lingus" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="decoBtn" layoutX="1024.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneConnect" onMouseEntered="#mouseOverDeco" onMouseExited="#mouseExitDeco" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Deconnexion" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="homeBtn" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneHome" onMouseEntered="#mouseOverHome" onMouseExited="#mouseExitHome" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Accueil" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="magBtn" layoutX="371.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneMag" onMouseEntered="#mouseOverMag" onMouseExited="#mouseExitMag" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Magazine" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="workshopBtn" layoutX="508.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneWorkshop" onMouseEntered="#mouseOverWorkshop" onMouseExited="#mouseExitWorkshop" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Atelier" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="toolsBtn" layoutX="619.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneTools" onMouseEntered="#mouseOverTools" onMouseExited="#mouseExitTools" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Outils" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="profBtn" layoutX="923.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneProfile" style="-fx-background-radius: 30; -fx-background-color: white;" text="Profil" textFill="#35a8e1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Ubuntu" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
    </children>
 </Pane>

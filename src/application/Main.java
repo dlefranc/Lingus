@@ -18,7 +18,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws MalformedURLException{
 		
 		try {
-			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowParam.fxml"));
+			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowHome.fxml"));
 			
 			Scene scene = new Scene(root,1280,1024);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
