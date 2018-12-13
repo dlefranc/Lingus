@@ -9,6 +9,7 @@
 }
 
 @font-face{
+	
 	font-family:CANDARA;
 	src: url(../resources/fonts/CANDARA.TFF);
 }
@@ -24,8 +25,8 @@
     -fx-font-size: 50;
 }
 */
-.label{
-	-fx-font-family: "CANDARA";
-	
+#lab{
+	-fx-font-family: CANDARA;
+	-fx-font-size: 50;
 }
 
