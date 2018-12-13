@@ -119,7 +119,7 @@
                </image>
             </ImageView>
          </children></Pane>
-      <Hyperlink layoutX="945.0" layoutY="628.0" text="Apprendre une">
+      <Hyperlink fx:id="hyp1" layoutX="945.0" layoutY="628.0" onMouseEntered="#hyperlinkIn" onMouseExited="#hyperlinkOut" text="Apprendre une">
          <font>
             <Font name="Ubuntu" size="24.0" />
          </font>
@@ -134,7 +134,7 @@
             <Image url="@../resources/images/listeMots.png" />
          </image>
       </ImageView>
-      <Hyperlink layoutX="940.0" layoutY="667.0" text="nouvelle langue">
+      <Hyperlink fx:id="hyp2" layoutX="940.0" layoutY="667.0" onMouseEntered="#hyperlinkIn" onMouseExited="#hyperlinkOut" text="nouvelle langue">
          <font>
             <Font name="Ubuntu" size="24.0" />
          </font>
