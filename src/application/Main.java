@@ -1,12 +1,18 @@
 package application; 
 	
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
+
 import javafx.application.Application;
 
 import javafx.stage.Stage;
 import javafx.scene.Scene;
-
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 
 
@@ -16,7 +22,7 @@ import demo.model.User;
 import demo.security.Authenticator;*/
 
 public class Main extends Application {
-	Scene conec, home, mag, workshop, tools, prof, deco;
+	//Scene conec, home, mag, workshop, tools, prof, deco;
 	/*private Stage stage;
 	
 	@FXML
@@ -24,7 +30,8 @@ public class Main extends Application {
 	
 	@FXML
 	private TextField mdpProf;*/
-	
+	@FXML
+	private Label labTest;
 	
 	/*@Override
 	  public void init() throws Exception {
@@ -33,13 +40,28 @@ public class Main extends Application {
 	    Font.loadFont(Main.class.getResource("resources/fonts/GreatVibes.otf").toExternalForm(), 12);
 	  }*/
 	
+	
+	
 	@Override
-	public void start(Stage primaryStage) {
+	public void start(Stage primaryStage) throws MalformedURLException{
+		
 		try {
 			//stage = primaryStage;
 			//Pane root = (Pane)FXMLLoader.load(getClass().getResource("test.fxml"));
-			Font.loadFont(getClass().getResourceAsStream("../resources/fonts/CANDARA.TFF"), 14);
+			//Font.loadFont(Main.class.getResource("../resources/fonts/CANDARA.TFF").toExternalForm(), 30);
+			 
+			
+			      // load a custom font from a specific location (change path!)
+			      // 12 is the size to use
+			     // public Font customFont = Font.loadFont(new FileInputStream(new File("src/resources/fonts/CANDARA.TTF").toURL().toString()), 26);
+			     // labTest.setFont(f); // use this font with our label
+			    
+			
+			
+			 
+			//Font.loadFont(getClass().getResourceAsStream("../resources/fonts/CANDARA.TFF"), 14);
 			Pane root = (Pane)FXMLLoader.load(getClass().getResource("windowParam.fxml"));
+			
 			Scene scene = new Scene(root,1280,1024);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
@@ -48,6 +70,12 @@ public class Main extends Application {
 			e.printStackTrace();
 		}
 	}
+	
+	/*public Font getCustomFont() {
+		return customFont;
+	}*/
+	
+	
 	
 	
 	/*long mTime = System.currentTimeMillis();

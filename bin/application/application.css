@@ -7,3 +7,25 @@
     -fx-border-radius: 15px;
     
 }
+
+@font-face{
+	font-family:CANDARA;
+	src: url(../resources/fonts/CANDARA.TFF);
+}
+
+/* 
+.lab1 {
+    -fx-font-family: "CANDARA";
+    -fx-font-size: 50;
+}
+
+.lab2 {
+    -fx-font-family: "CANDARA";
+    -fx-font-size: 50;
+}
+*/
+.label{
+	-fx-font-family: "CANDARA";
+	
+}
+
