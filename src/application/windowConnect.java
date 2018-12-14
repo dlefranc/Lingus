@@ -19,7 +19,7 @@ public class windowConnect {
 	private Label erreur;
 	
 	public void tryConnec(ActionEvent event) throws IOException{
-		String user="test";
+		String user="Pseudo";
 		String mdp="test";
 		
 		if(userProf.getText().equals(user)  && mdpProf.getText().equals(mdp)) {

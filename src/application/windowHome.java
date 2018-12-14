@@ -4,6 +4,7 @@ import java.io.File;
 import java.net.MalformedURLException;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
@@ -17,20 +18,30 @@ public class windowHome extends func{
 	private Hyperlink hyp2;
 	
 	
+	/*@FXML
+	private ComboBox<ImageView> menuBtn;*/
 	@FXML
-	private MenuButton menuBtn;
+	private ComboBox<Image> menuBtn;
+	
+	private ImageView flagFR, flagENG, flagIT;
+	private Image imgFR, imgENG, imgIT;
 	
 	public void initialize() throws MalformedURLException {
-		MenuItem menuItem1 = new MenuItem("Option 1");
-		MenuItem menuItem2 = new MenuItem("Option 2");
-		MenuItem menuItem3 = new MenuItem("Option 3");
 		
-		@SuppressWarnings("deprecation")
-		Image image1 = new Image(new File("src/resources/images/CoversMag/Eng/Art/Art1.jpg").toURL().toString());
+	/*	imgFR = new Image(new File("src/resources/images/Flags/flagFR.png").toURL().toString());
+		imgENG = new Image(new File("src/resources/images/Flags/flagENG.png").toURL().toString());
+		imgIT = new Image(new File("src/resources/images/Flags/flagIT.png").toURL().toString());
 		
-		ImageView imageView = new ImageView(image1);
-
-		menuBtn = new MenuButton("Options", imageView, menuItem1, menuItem2, menuItem3);
+		flagFR.setImage(imgFR);
+		flagENG.setImage(imgENG);
+		flagIT.setImage(imgIT);
+	
+		menuBtn.getItems().clear();
+		menuBtn.getItems().addAll(imgFR, imgENG, imgIT);
+		
+		menuBtn.getSelectionModel().select(imgFR);*/
+		
+		
 	}
 	
 	
