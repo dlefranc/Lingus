@@ -14,7 +14,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Pane;
 
 public class func extends Main{
 	@FXML
@@ -151,6 +150,7 @@ public class func extends Main{
 		}
 	}
 	
+	@SuppressWarnings("deprecation")
 	public void langChoice1() {
 		
 		tmpImg = new Image(flagMenu.getImage().impl_getUrl());
@@ -163,6 +163,7 @@ public class func extends Main{
 		openMenu = false;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public void langChoice2() {
 		
 		tmpImg = new Image(flagMenu.getImage().impl_getUrl());

@@ -8,20 +8,14 @@ import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.stage.Stage;
 
 public class newLang extends func{
 	
@@ -60,30 +54,6 @@ public class newLang extends func{
 	
 	private MediaPlayer ITSound = new MediaPlayer(new Media(this.getClass().getResource("../resources/sounds/claudia.mp3").toString()));
 	
-	private String tabEx1[]= {"Sapete dove si ", 
-								"trova", 
-								"conosco", 
-								"ha", 
-								"mangiare", 
-								"trova", 
-								" la cassetta per favore ?"
-							};
-	
-	private String tabEx2[]= {"Mi scusi, signore, sto cercando la Rue Mondo", 
-								"si trova a destra dopo la biblioteca", 
-								"io sono il capo", 
-								"io conosco", 
-								"la strada è piena", 
-								"si trova a destra dopo la biblioteca"
-							};
-		
-	private String tabEx3[]= {"Dans quelle région se trouve Claudia lors de ses vacances ?", 
-								"En Puglia", 
-								"En Campania", 
-								"En Basilicata", 
-								"En Calabria", 
-								"En Calabria"
-							};
 	public void initialize() {	
 		score=0;
 		
