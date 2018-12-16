@@ -12,6 +12,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.FXML;
 
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
 
 public class func extends Main{
 	@FXML
@@ -26,6 +29,20 @@ public class func extends Main{
 	private Button profBtn;
 	@FXML
 	private Button decoBtn;
+	
+	
+	@FXML
+	private ImageView flagMenu;
+	@FXML
+	private ImageView flagChoice1;
+	@FXML
+	private ImageView flagChoice2;
+	
+	protected static Boolean learnIT = false;
+	
+	private Boolean openMenu = false;
+	private Image tmpImg;
+	
 	
 	//OVER
 	public void mouseOverHome() {
@@ -116,4 +133,52 @@ public class func extends Main{
 		window.setScene(ConnectScene);
 	}
 	
+	
+	public void viewFlagChoice() {
+		if(openMenu) {
+			flagChoice1.setVisible(false);
+			if(learnIT) {
+				flagChoice2.setVisible(false);
+			}
+			openMenu = false;
+		}
+		else {
+			flagChoice1.setVisible(true);
+			if(learnIT) {
+				flagChoice2.setVisible(true);
+			}
+			openMenu = true;
+		}
+	}
+	
+	public void langChoice1() {
+		
+		tmpImg = new Image(flagMenu.getImage().impl_getUrl());
+		flagMenu.setImage(new Image(flagChoice1.getImage().impl_getUrl()));
+		flagChoice1.setImage(tmpImg);
+		
+		flagChoice1.setVisible(false);
+		flagChoice2.setVisible(false);
+		
+		openMenu = false;
+	}
+	
+	public void langChoice2() {
+		
+		tmpImg = new Image(flagMenu.getImage().impl_getUrl());
+		flagMenu.setImage(new Image(flagChoice2.getImage().impl_getUrl()));
+		flagChoice2.setImage(tmpImg);
+		
+		flagChoice1.setVisible(false);
+		flagChoice2.setVisible(false);
+		
+		openMenu = false;
+	}
+	
+	public void mouseOverFlag() {
+		flagMenu.setOpacity(1);
+	}
+	public void mouseExitFlag() {
+		flagMenu.setOpacity(0.8);
+	}
 }

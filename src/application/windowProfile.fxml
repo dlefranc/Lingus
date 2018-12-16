@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
@@ -16,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowProfile">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowProfile">
    <children>
       <Pane layoutX="110.0" layoutY="110.0" prefHeight="860.0" prefWidth="680.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
       <Pane layoutX="830.0" layoutY="110.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
@@ -229,6 +223,34 @@
                   <Font name="Ubuntu" size="22.0" />
                </font>
             </Button>
+            <Pane layoutX="844.0" prefHeight="210.0" prefWidth="70.0">
+               <children>
+                  <ImageView fx:id="flagMenu" fitHeight="82.0" fitWidth="70.0" onMouseClicked="#viewFlagChoice" onMouseEntered="#mouseOverFlag" onMouseExited="#mouseExitFlag" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagENG.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="flagChoice1" fitHeight="77.0" fitWidth="70.0" layoutX="1.0" layoutY="68.0" onMouseClicked="#langChoice1" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagFR.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="flagChoice2" fitHeight="77.0" fitWidth="70.0" layoutY="138.0" onMouseClicked="#langChoice2" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagIT.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
          </children>
       </Pane>
    </children>

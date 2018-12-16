@@ -12,21 +12,20 @@ import javafx.stage.Stage;
 public class windowWorkshop extends func{
 	public static Integer score;
 	
-	public void exe1(ActionEvent event) throws IOException{
-		Parent exe1View = FXMLLoader.load(getClass().getResource("workshop1.fxml"));
-		Scene exe1Scene = new Scene(exe1View);
+	public void lesson1(ActionEvent event) throws IOException{
+		Parent lesson1View = FXMLLoader.load(getClass().getResource("lessonConjug.fxml"));
+		Scene lesson1Scene = new Scene(lesson1View);
 		
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-		window.setScene(exe1Scene);
+		window.setScene(lesson1Scene);
 	}
 	
-	
-	public void exe3(ActionEvent event) throws IOException{
-		Parent exe3View = FXMLLoader.load(getClass().getResource("workshop3.fxml"));
-		Scene exe3Scene = new Scene(exe3View);
+	public void lesson2(ActionEvent event) throws IOException{
+		Parent lesson2View = FXMLLoader.load(getClass().getResource("lessonPronoun.fxml"));
+		Scene lesson2Scene = new Scene(lesson2View);
 		
 		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-		window.setScene(exe3Scene);
+		window.setScene(lesson2Scene);
 	}
 	
 	public void giveUp(ActionEvent event) throws IOException{

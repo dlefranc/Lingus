@@ -84,7 +84,6 @@ public class windowMag extends func{
 				mag3.setImage(image3);
 				mag4.setImage(image4);
 				mag5.setImage(image5);
-				System.out.println(new File("src/resources/images/CoversMag/Eng/Art/Art1.jpg").toURL().toString());
 				break;
 				
 			case "Car":

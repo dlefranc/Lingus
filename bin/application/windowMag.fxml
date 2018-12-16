@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.collections.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import java.lang.String?>
 <?import javafx.collections.FXCollections?>
 <?import javafx.scene.Cursor?>
@@ -18,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowMag">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowMag">
    <children>
       <Pane layoutX="125.0" layoutY="454.0" prefHeight="420.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
@@ -84,42 +77,6 @@
             </ComboBox>
          </children>
       </Pane>
-      <Pane fx:id="reader" layoutX="28.0" layoutY="25.0" prefHeight="975.0" prefWidth="1225.0" style="-fx-background-color: black;" visible="false">
-         <children>
-            <ImageView fx:id="page" fitHeight="945.0" fitWidth="726.0" layoutX="264.0" layoutY="14.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-001.jpg" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </ImageView>
-            <ImageView fx:id="left" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="412.0" onMouseClicked="#previousPage" pickOnBounds="true" preserveRatio="true" rotate="180.0">
-               <image>
-                  <Image url="@../resources/images/Mag/fleche.png" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </ImageView>
-            <ImageView fx:id="right" fitHeight="150.0" fitWidth="200.0" layoutX="1061.0" layoutY="413.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../resources/images/Mag/fleche.png" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </ImageView>
-            <ImageView fitHeight="48.0" fitWidth="80.0" layoutX="1147.0" layoutY="14.0" onMouseClicked="#closePage" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../resources/images/Mag/croix.png" />
-               </image>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </ImageView>
-         </children>
-      </Pane>
       <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-background-color: #35a8e1;">
          <children>
             <Button fx:id="titleBtn" layoutX="84.0" mnemonicParsing="false" onAction="#sceneHome" style="-fx-background-color: #35a8e1;" text="Lingus" textFill="WHITE">
@@ -178,6 +135,70 @@
                   <Font name="Ubuntu" size="22.0" />
                </font>
             </Button>
+            <Pane layoutX="844.0" prefHeight="210.0" prefWidth="70.0">
+               <children>
+                  <ImageView fx:id="flagMenu" fitHeight="82.0" fitWidth="70.0" onMouseClicked="#viewFlagChoice" onMouseEntered="#mouseOverFlag" onMouseExited="#mouseExitFlag" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagENG.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="flagChoice1" fitHeight="77.0" fitWidth="70.0" layoutX="1.0" layoutY="68.0" onMouseClicked="#langChoice1" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagFR.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="flagChoice2" fitHeight="77.0" fitWidth="70.0" layoutY="138.0" onMouseClicked="#langChoice2" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagIT.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="reader" layoutX="28.0" layoutY="25.0" prefHeight="975.0" prefWidth="1225.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <ImageView fx:id="page" fitHeight="945.0" fitWidth="726.0" layoutX="264.0" layoutY="14.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/Mag/Eng/Travel/Travel1/TravelMag1-1-42-page-001.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="left" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="412.0" onMouseClicked="#previousPage" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../resources/images/Mag/fleche.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="right" fitHeight="150.0" fitWidth="200.0" layoutX="1061.0" layoutY="413.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/Mag/fleche.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="80.0" layoutX="1147.0" layoutY="14.0" onMouseClicked="#closePage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/Mag/croix.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
          </children>
       </Pane>
    </children>

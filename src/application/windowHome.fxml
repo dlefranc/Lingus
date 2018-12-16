@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowHome">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowHome">
    <children>
       <Pane layoutX="110.0" layoutY="110.0" prefHeight="860.0" prefWidth="680.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
       <Pane layoutX="830.0" layoutY="110.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 30;" />
@@ -89,27 +83,21 @@
                   <Font name="Ubuntu" size="22.0" />
                </font>
             </Label>
-            <ImageView fitHeight="82.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../resources/images/Flags/flagENG.png" />
-               </image>
-            </ImageView>
             <Accordion layoutX="103.0" layoutY="31.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Accordion>
-            <ImageView fitHeight="77.0" fitWidth="141.0" layoutX="77.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="154.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
-                  <Image url="@../resources/images/Flags/flagFR.png" />
+                  <Image url="@../resources/images/Flags/flagIT.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="147.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../../../../../../../../../home/26/dlefranc/Bureau/stockage/M1/Projet_IHM/git/Lingus/src/resources/images/Flags/flagIT.png" />
-               </image>
-            </ImageView>
-            <Pane layoutX="84.0" layoutY="9.0" opacity="0.81" prefHeight="60.0" prefWidth="141.0" style="-fx-background-color: white;" />
+            <Label layoutX="163.0" text="Bienvenue">
+               <font>
+                  <Font size="60.0" />
+               </font>
+            </Label>
          </children></Pane>
       <Pane layoutX="860.0" layoutY="150.0" prefHeight="350.0" prefWidth="280.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
@@ -124,12 +112,12 @@
                </image>
             </ImageView>
          </children></Pane>
-      <Hyperlink fx:id="hyp1" layoutX="945.0" layoutY="628.0" onMouseEntered="#hyperlinkIn" onMouseExited="#hyperlinkOut" text="Apprendre une">
+      <Hyperlink fx:id="hyp1" layoutX="945.0" layoutY="628.0" onAction="#learn" onMouseEntered="#hyperlinkIn" onMouseExited="#hyperlinkOut" text="Apprendre une">
          <font>
             <Font name="Ubuntu" size="24.0" />
          </font>
       </Hyperlink>
-      <Hyperlink layoutX="948.0" layoutY="799.0" text="Liste de mots">
+      <Hyperlink layoutX="948.0" layoutY="799.0" onAction="#viewWordList" text="Liste de mots">
          <font>
             <Font name="Ubuntu" size="24.0" />
          </font>
@@ -139,7 +127,7 @@
             <Image url="@../resources/images/listeMots.png" />
          </image>
       </ImageView>
-      <Hyperlink fx:id="hyp2" layoutX="940.0" layoutY="667.0" onMouseEntered="#hyperlinkIn" onMouseExited="#hyperlinkOut" text="nouvelle langue">
+      <Hyperlink fx:id="hyp2" layoutX="940.0" layoutY="667.0" onAction="#learn" onMouseEntered="#hyperlinkIn" onMouseExited="#hyperlinkOut" text="nouvelle langue">
          <font>
             <Font name="Ubuntu" size="24.0" />
          </font>
@@ -207,6 +195,117 @@
                   <Font name="Ubuntu" size="22.0" />
                </font>
             </Button>
+            <Pane layoutX="844.0" prefHeight="210.0" prefWidth="70.0">
+               <children>
+                  <ImageView fx:id="flagMenu" fitHeight="82.0" fitWidth="70.0" onMouseClicked="#viewFlagChoice" onMouseEntered="#mouseOverFlag" onMouseExited="#mouseExitFlag" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagENG.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="flagChoice1" fitHeight="77.0" fitWidth="70.0" layoutX="1.0" layoutY="68.0" onMouseClicked="#langChoice1" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagFR.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="flagChoice2" fitHeight="77.0" fitWidth="70.0" layoutY="138.0" onMouseClicked="#langChoice2" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagIT.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="langPane" layoutX="275.5" layoutY="287.0" prefHeight="450.0" prefWidth="729.0" style="-fx-background-color: grey; -fx-background-radius: 30;" visible="false">
+         <children>
+            <Pane layoutX="88.0" layoutY="46.0" prefHeight="359.0" prefWidth="553.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+               <children>
+                  <ImageView fx:id="ITFlag" fitHeight="192.0" fitWidth="192.0" layoutX="30.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagIT.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="hypITFlag" layoutX="70.0" layoutY="242.0" onAction="#addIT" text="Italien">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Hyperlink>
+                  <ImageView fx:id="ITFlag1" disable="true" fitHeight="192.0" fitWidth="193.0" layoutX="331.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/images/Flags/flagENG.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="hypITFlag1" disable="true" layoutX="362.0" layoutY="242.0" onAction="#addIT" text="Anglais">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <ImageView fitHeight="50.0" fitWidth="67.0" layoutX="662.0" layoutY="14.0" onMouseClicked="#closeLang" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/blackCross.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Pane fx:id="levelIT" layoutX="88.0" layoutY="46.0" prefHeight="359.0" prefWidth="553.0" style="-fx-background-color: white; -fx-background-radius: 30;" visible="false">
+               <children>
+                  <Label layoutX="105.0" layoutY="14.0" text="A quel niveau vous situez-vous ?">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <RadioButton id="rad" layoutX="221.0" layoutY="60.0" mnemonicParsing="false" selected="true" stylesheets="@application.css" text="Débutant">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="levelNew" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton id="rad" layoutX="221.0" layoutY="105.0" mnemonicParsing="false" stylesheets="@application.css" text="Apprenti" toggleGroup="$levelNew">
+                     <font>
+                        <Font name="Ubuntu" size="16.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton id="rad" layoutX="221.0" layoutY="150.0" mnemonicParsing="false" stylesheets="@application.css" text="Intermédiaire" toggleGroup="$levelNew">
+                     <font>
+                        <Font name="Ubuntu" size="16.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton id="rad" layoutX="221.0" layoutY="195.0" mnemonicParsing="false" stylesheets="@application.css" text="Expert" toggleGroup="$levelNew">
+                     <font>
+                        <Font name="Ubuntu" size="16.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="14.0" layoutY="316.0" text="Vous n'êtes pas sûr de connaître votre niveau ?">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink layoutX="433.0" layoutY="311.0" onAction="#newLangView" text="Cliquez ici.">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Hyperlink>
+                  <Button layoutX="237.0" layoutY="250.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Valider">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
          </children>
       </Pane>
    </children>

@@ -8,4 +8,11 @@
     
 }
 
+#slidVolume .track{
+    -fx-padding: 7;
+}
+
+#slidVolume .thumb {
+    -fx-padding: 11;
+}
 

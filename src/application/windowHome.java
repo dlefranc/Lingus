@@ -1,15 +1,19 @@
 package application;
 
-import java.io.File;
-import java.net.MalformedURLException;
+import java.io.IOException;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Hyperlink;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
 
 public class windowHome extends func{
 	@FXML
@@ -18,32 +22,15 @@ public class windowHome extends func{
 	private Hyperlink hyp2;
 	
 	
-	/*@FXML
-	private ComboBox<ImageView> menuBtn;*/
 	@FXML
-	private ComboBox<Image> menuBtn;
+	private Pane langPane;
+	@FXML
+	private ImageView ITFlag;
+	@FXML
+	private Hyperlink hypITFlag;
 	
-	private ImageView flagFR, flagENG, flagIT;
-	private Image imgFR, imgENG, imgIT;
-	
-	public void initialize() throws MalformedURLException {
-		
-	/*	imgFR = new Image(new File("src/resources/images/Flags/flagFR.png").toURL().toString());
-		imgENG = new Image(new File("src/resources/images/Flags/flagENG.png").toURL().toString());
-		imgIT = new Image(new File("src/resources/images/Flags/flagIT.png").toURL().toString());
-		
-		flagFR.setImage(imgFR);
-		flagENG.setImage(imgENG);
-		flagIT.setImage(imgIT);
-	
-		menuBtn.getItems().clear();
-		menuBtn.getItems().addAll(imgFR, imgENG, imgIT);
-		
-		menuBtn.getSelectionModel().select(imgFR);*/
-		
-		
-	}
-	
+	@FXML
+	private Pane levelIT;
 	
 	public void hyperlinkIn() {
 		hyp1.setStyle("-fx-text-fill : #35a8e1; -fx-underline : true;");
@@ -55,5 +42,61 @@ public class windowHome extends func{
 		hyp1.setStyle("-fx-text-fill : #008ec0; -fx-underline : false;");
 		hyp2.setStyle("-fx-text-fill : #008ec0; -fx-underline : false;");
 	}
+	
+	public void viewWordList (ActionEvent event) throws IOException{
+		Parent wordListView = FXMLLoader.load(getClass().getResource("wordList.fxml"));
+		Scene wordListScene = new Scene(wordListView);
+		
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(wordListScene);
+	}
+	
+	
+	public void learn() {
+		langPane.setVisible(true);
+	}
+	
+	public void closeLang() {
+		langPane.setVisible(false);
+		levelIT.setVisible(false);
+	}
+	
+	public void addIT() {
+		levelIT.setVisible(true);
+	}
+	
+	public void initialize() {
+		if(learnIT) {
+			ITFlag.setDisable(true);
+			hypITFlag.setDisable(true);
+		}
+		else {	
+			ITFlag.setDisable(false);
+			hypITFlag.setDisable(false);
+		}
+	}
+	
+	public void newLangView(ActionEvent event) throws IOException{
+		learnIT = true;
+		levelIT.setVisible(false);
+		ITFlag.setDisable(true);
+		hypITFlag.setDisable(true);
+		
+		Parent newLangView = FXMLLoader.load(getClass().getResource("newLang.fxml"));
+		Scene newLangScene = new Scene(newLangView);
+		
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(newLangScene);
+	}
+	
+	public void newLangAccept(){
+		learnIT = true;
+		levelIT.setVisible(false);
+		ITFlag.setDisable(true);
+		hypITFlag.setDisable(true);
+		langPane.setVisible(false);
+	}
+	
+	
 	
 }

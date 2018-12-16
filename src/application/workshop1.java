@@ -22,16 +22,16 @@ public class workshop1 extends windowWorkshop{
 	
 	private String[] tabFait;
 	
-	private String tabExe[][]= {{"The invention of the steam ", "motor", "engine", "device", "box", "engine", " was an industrial revolution."},
-								{"Although their car had ", "order", "broken down", "broken in", "broken out", "broken down", " on a main road, no one stopped."},
-								{"There were not many trains ", "running", "working", "linking", "passing", "running", " between the two cities."},
-								{"In new companies, accounts are now ", "processed", "treated", "plugged", "viewed", "processed", " by computer."},
-								{"", "Pipes", "Drills", "Cranes", "Computers", "Cranes", " will be used for moving heavy machinery."},
-								{"Are you sure the printer is ", "engaged", "connected", "linked", "broken", "connected", " properly ?"},
+	private String tabExe[][]= {{"The invention of the steam engine ", "were", "was", "is", "have", "was", " an industrial revolution."},
+								{"Although their car ", "have", "had", "is", "was", "had", " broken down on a main road, no one stopped."},
+								{"There ", "were", "has", "was", "isn't", "were", " not many trains running between the two cities."},
+								{"In new companies, accounts ", "are", "were", "was", "is", "are", " now by computer."},
+								{"Cranes ", "will", "has", "were", "was", "will", " be used for moving heavy machinery."},
+								{"Are you sure the printer ", "was", "is", "are", "have", "is", " connected properly ?"},
 								{"I decided to become a scientist after i ", "seed", "saw", "have seen", "sound", "saw", " a movie."},
-								{"The country's railway ", "network", "pattern", "scheme", "bus", "network", " has been in need of modernization."},
-								{"All new cars have to be ", "built-in", "installed", "fitted", "inserted", "fitted", " with safety belts at the back."},
-								{"The first ", "experimentation", "experience", "experiment", "explanation", "experiment", " of this kind was carried out in California."}
+								{"The country's railway network ", "is", "has", "were", "had", "is", " in need of modernization."},
+								{"All new cars ", "has", "were", "have", "do", "have", " to be fitted with safety belts at the back."},
+								{"The first experiment of this kind ", "was", "were", "is", "are", "was", " carried out in California."}
 								};
 
 	Random rand = new Random();

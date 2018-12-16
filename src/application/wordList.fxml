@@ -1,63 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
-<?import javafx.collections.FXCollections?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollBar?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.windowTools">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1280.0" style="-fx-background-color: #e9e9e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.wordList">
    <children>
-      <Pane layoutX="125.0" layoutY="142.0" prefHeight="246.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
-         <children>
-            <Label layoutX="256.0" layoutY="24.0" text="Sélectionner un outil">
-               <font>
-                  <Font name="Ubuntu" size="55.0" />
-               </font>
-            </Label>
-            <ComboBox fx:id="tools" layoutX="415.0" layoutY="152.0" onAction="#switchTools" prefWidth="200.0" promptText="Verbes irréguliers" style="-fx-background-color: #e9e9e9; -fx-effect: dropshadow(three-pass-box, #10a3e7, 2, 0.5, 0, 0);" visibleRowCount="2">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <items>
-                  <FXCollections fx:factory="observableArrayList">
-                     <String fx:value="Verbes irréguliers" />
-                     <String fx:value="Traducteur" />
-                  </FXCollections>
-               </items>
-            </ComboBox>
-         </children>
-      </Pane>
-      <Pane layoutX="125.0" layoutY="454.0" prefHeight="420.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+      <Pane layoutX="125.0" layoutY="183.0" prefHeight="741.0" prefWidth="1030.0" style="-fx-background-color: white; -fx-background-radius: 30;">
          <children>
             <VBox fx:id="vbox" maxWidth="1017.0" prefHeight="420.0" prefWidth="1030.0">
                <children>
-                  <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0">
+                  <Pane minHeight="60.0" minWidth="1000.0" prefHeight="214.0" prefWidth="1017.0">
                      <children>
-                        <Label layoutX="40.0" layoutY="15.0" text="Base verbale">
+                        <Label layoutX="40.0" layoutY="15.0" text="Mot">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="325.0" layoutY="15.0" text="Prétérit">
+                        <Label layoutX="360.0" layoutY="11.0" text="Nombre de fois rencontré">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="543.0" layoutY="15.0" text="Participe passé">
-                           <font>
-                              <Font name="Ubuntu" size="26.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="840.0" layoutY="15.0" text="Traduction">
+                        <Label layoutX="881.0" layoutY="11.0" text="Maîtrise">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
@@ -71,69 +42,130 @@
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="325.0" layoutY="16.0" text="Arose">
+                        <Label layoutX="501.0" layoutY="11.0" text="9">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="543.0" layoutY="15.0" text="Arisen">
-                           <font>
-                              <Font name="Ubuntu" size="26.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="840.0" layoutY="16.0" text="S'élever">
-                           <font>
-                              <Font name="Ubuntu" size="26.0" />
-                           </font>
-                        </Label>
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar3.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                   <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0">
                      <children>
-                        <Label layoutX="40.0" layoutY="15.0" text="Awake">
+                        <Label layoutX="40.0" layoutY="15.0" text="Arrow">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="325.0" layoutY="15.0" text="Awoke">
+                        <Label layoutX="501.0" layoutY="11.0" text="5">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="543.0" layoutY="15.0" text="Awoken">
-                           <font>
-                              <Font name="Ubuntu" size="26.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="840.0" layoutY="15.0" text="S'éveiller">
-                           <font>
-                              <Font name="Ubuntu" size="26.0" />
-                           </font>
-                        </Label>
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar2.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                   <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #d2d2d2;">
                      <children>
-                        <Label layoutX="40.0" layoutY="11.0" text="Be">
+                        <Label layoutX="40.0" layoutY="11.0" text="Attend">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="325.0" layoutY="13.0" text="Was,Were">
+                        <Label layoutX="501.0" layoutY="11.0" text="5">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="543.0" layoutY="15.0" text="Been">
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="Aunt">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="840.0" layoutY="13.0" text="Être">
+                        <Label layoutX="501.0" layoutY="11.0" text="3">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar0.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #d2d2d2;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="Awake">
+                           <font>
+                              <Font name="Ubuntu" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="501.0" layoutY="11.0" text="0">
+                           <font>
+                              <Font name="Ubuntu" size="26.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar0.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="Ball">
+                           <font>
+                              <Font name="Ubuntu" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="501.0" layoutY="14.0" text="0">
+                           <font>
+                              <Font name="Ubuntu" size="26.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar0.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #d2d2d2;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="Be">
+                           <font>
+                              <Font name="Ubuntu" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="494.0" layoutY="11.0" text="10">
+                           <font>
+                              <Font name="Ubuntu" size="26.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar3.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                   <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0">
@@ -143,21 +175,16 @@
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="325.0" layoutY="14.0" text="Bore">
+                        <Label layoutX="501.0" layoutY="14.0" text="5">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="543.0" layoutY="15.0" text="Borne">
-                           <font>
-                              <Font name="Ubuntu" size="26.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="840.0" layoutY="14.0" text="Supporter">
-                           <font>
-                              <Font name="Ubuntu" size="26.0" />
-                           </font>
-                        </Label>
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar3.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                   <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #d2d2d2;">
@@ -167,21 +194,16 @@
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="325.0" layoutY="19.0" text="Beat">
+                        <Label layoutX="501.0" layoutY="11.0" text="0">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="543.0" layoutY="14.0" text="Beaten">
-                           <font>
-                              <Font name="Ubuntu" size="26.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="840.0" layoutY="14.0" text="Battre">
-                           <font>
-                              <Font name="Ubuntu" size="26.0" />
-                           </font>
-                        </Label>
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar0.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                   <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0">
@@ -191,66 +213,44 @@
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="325.0" layoutY="20.0" text="Became">
+                        <Label layoutX="501.0" layoutY="14.0" text="5">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="543.0" layoutY="14.0" text="Become">
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane minHeight="60.0" minWidth="1000.0" prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #d2d2d2;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="Belly">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
-                        <Label layoutX="840.0" layoutY="14.0" text="Devenir">
+                        <Label layoutX="501.0" layoutY="11.0" text="0">
                            <font>
                               <Font name="Ubuntu" size="26.0" />
                            </font>
                         </Label>
+                        <ImageView fitHeight="44.0" fitWidth="139.0" layoutX="864.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/images/Stars/triStar0.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                </children>
             </VBox>
-            <ScrollBar fx:id="scrollBar" layoutX="1016.0" max="10.0" orientation="VERTICAL" prefHeight="420.0" prefWidth="14.0" style="-fx-border-color: #c8c8c8;">
+            <ScrollBar fx:id="scrollBar" layoutX="1016.0" max="10.0" orientation="VERTICAL" prefHeight="741.0" prefWidth="16.0" style="-fx-border-color: #c8c8c8;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ScrollBar>
-            <Pane fx:id="tradPane" prefHeight="420.0" prefWidth="1030.0" visible="false">
-               <children>
-                  <Button layoutX="459.0" layoutY="337.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Traduire">
-                     <font>
-                        <Font name="Ubuntu" size="20.0" />
-                     </font>
-                  </Button>
-                  <TextArea layoutX="75.0" layoutY="106.0" prefHeight="180.0" prefWidth="380.0" promptText="Saisissez votre mot ou texte">
-                     <font>
-                        <Font name="Ubuntu" size="20.0" />
-                     </font>
-                  </TextArea>
-                  <TextArea editable="false" layoutX="575.0" layoutY="106.0" prefHeight="180.0" prefWidth="380.0" />
-                  <ComboBox layoutX="165.0" layoutY="45.0" onAction="#switchTools" prefWidth="200.0" promptText="Français" style="-fx-background-color: #e9e9e9; -fx-effect: dropshadow(three-pass-box, #10a3e7, 2, 0.5, 0, 0);" visibleRowCount="2">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <items>
-                        <FXCollections fx:factory="observableArrayList">
-                           <String fx:value="Français" />
-                           <String fx:value="Anglais" />
-                        </FXCollections>
-                     </items>
-                  </ComboBox>
-                  <ComboBox fx:id="tools2" layoutX="665.0" layoutY="45.0" onAction="#switchTools" prefWidth="200.0" promptText="Anglais" style="-fx-background-color: #e9e9e9; -fx-effect: dropshadow(three-pass-box, #10a3e7, 2, 0.5, 0, 0);" visibleRowCount="2">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <items>
-                        <FXCollections fx:factory="observableArrayList">
-                           <String fx:value="Anglais" />
-                           <String fx:value="Français" />
-                        </FXCollections>
-                     </items>
-                  </ComboBox>
-               </children></Pane>
          </children>
       </Pane>
       <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-background-color: #35a8e1;">
@@ -295,7 +295,7 @@
                   <Font name="Ubuntu" size="22.0" />
                </font>
             </Button>
-            <Button fx:id="toolsBtn" layoutX="619.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneTools" style="-fx-background-radius: 30; -fx-background-color: white;" text="Outils" textFill="#35a8e1">
+            <Button fx:id="toolsBtn" layoutX="619.0" layoutY="14.0" mnemonicParsing="false" onAction="#sceneTools" style="-fx-background-radius: 30; -fx-background-color: #35a8e1;" text="Outils" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
