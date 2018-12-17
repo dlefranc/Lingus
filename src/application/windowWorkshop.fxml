@@ -21,7 +21,7 @@
                   <Font name="Ubuntu" size="30.0" />
                </font>
             </Label>
-            <Button layoutX="191.0" layoutY="515.0" mnemonicParsing="false" onAction="#lesson2" style="-fx-background-radius: 30;" text="Questions / réponses">
+            <Button layoutX="191.0" layoutY="490.0" mnemonicParsing="false" onAction="#lesson2" style="-fx-background-radius: 30;" text="Questions / réponses">
                <font>
                   <Font name="Ubuntu" size="30.0" />
                </font>
@@ -29,7 +29,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="189.0" layoutY="691.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Compréhension orale">
+            <Button layoutX="189.0" layoutY="723.0" mnemonicParsing="false" onAction="#oral" style="-fx-background-radius: 30;" text="Compréhension orale">
                <font>
                   <Font name="Ubuntu" size="30.0" />
                </font>
@@ -61,6 +61,11 @@
                   </FXCollections>
                </items>
             </ComboBox>
+            <Label layoutX="299.0" layoutY="630.0" text="Exercice">
+               <font>
+                  <Font name="Ubuntu" size="30.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
       <Pane layoutX="830.0" layoutY="110.0" prefHeight="430.0" prefWidth="340.0" style="-fx-background-color: white; -fx-background-radius: 30;">

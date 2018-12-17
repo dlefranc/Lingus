@@ -250,12 +250,14 @@ public class newLang extends func{
 		ITEND.setVisible(true);
 		showStars(score);
 		showNote(score);
+		ITSound.stop();
 	}
 	
 	public void passIT3(ActionEvent event) throws IOException{
 		ITEND.setVisible(true);
 		showStars(score);
 		showNote(score);
+		ITSound.stop();
 	}
 	
 	public void playSound() throws MalformedURLException {

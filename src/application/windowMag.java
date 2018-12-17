@@ -53,11 +53,11 @@ public class windowMag extends func{
     
 	
 	@FXML
-	public void initialize() {
+	public void initialize() throws MalformedURLException {
 		categorie.getItems().clear();
 		categorie.getItems().addAll("Art", "Car", "Food", "Gossip", "Sport", "Teen", "Travel NOUVEAU", "Wedding");
 		categorie.getSelectionModel().select("Art");
-		
+
 	}
 	
 	public void viewMag1() {

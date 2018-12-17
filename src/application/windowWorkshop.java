@@ -28,6 +28,14 @@ public class windowWorkshop extends func{
 		window.setScene(lesson2Scene);
 	}
 	
+	public void oral(ActionEvent event) throws IOException{
+		Parent oralView = FXMLLoader.load(getClass().getResource("workshop2.fxml"));
+		Scene oralScene = new Scene(oralView);
+		
+		Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+		window.setScene(oralScene);
+	}
+	
 	public void giveUp(ActionEvent event) throws IOException{
 		Parent WorkshopView = FXMLLoader.load(getClass().getResource("windowWorkshop.fxml"));
 		Scene WorkshopScene = new Scene(WorkshopView);

@@ -1,5 +1,6 @@
 package application;
 
+
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
@@ -30,12 +31,19 @@ public class func extends Main{
 	private Button decoBtn;
 	
 	
+		
 	@FXML
-	private ImageView flagMenu;
+	public ImageView flagMenu;
+	
 	@FXML
-	private ImageView flagChoice1;
+	public ImageView flagChoice1;
+	
 	@FXML
-	private ImageView flagChoice2;
+	public ImageView flagChoice2;
+	
+	public static String flag1Url = "src/resources/images/Flags/flagENG.png";
+	public static String flag2Url = "src/resources/images/Flags/flagFR.png";
+	public static String flag3Url = "src/resources/images/Flags/flagIT.png";
 	
 	protected static Boolean learnIT = false;
 	
@@ -133,6 +141,7 @@ public class func extends Main{
 	}
 	
 	
+
 	public void viewFlagChoice() {
 		if(openMenu) {
 			flagChoice1.setVisible(false);
@@ -152,8 +161,9 @@ public class func extends Main{
 	
 	@SuppressWarnings("deprecation")
 	public void langChoice1() {
-		
+	
 		tmpImg = new Image(flagMenu.getImage().impl_getUrl());
+		
 		flagMenu.setImage(new Image(flagChoice1.getImage().impl_getUrl()));
 		flagChoice1.setImage(tmpImg);
 		
@@ -182,4 +192,5 @@ public class func extends Main{
 	public void mouseExitFlag() {
 		flagMenu.setOpacity(0.8);
 	}
+	
 }

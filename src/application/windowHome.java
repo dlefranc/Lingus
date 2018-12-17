@@ -1,7 +1,7 @@
 package application;
 
-import java.io.IOException;
 
+import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -30,6 +30,7 @@ public class windowHome extends func{
 	
 	@FXML
 	private Pane levelIT;
+	
 	
 	public void hyperlinkIn() {
 		hyp1.setStyle("-fx-text-fill : #35a8e1; -fx-underline : true;");
@@ -64,7 +65,8 @@ public class windowHome extends func{
 		levelIT.setVisible(true);
 	}
 	
-	public void initialize() {
+	
+	public void initialize(){
 		if(learnIT) {
 			ITFlag.setDisable(true);
 			hypITFlag.setDisable(true);

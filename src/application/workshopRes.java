@@ -41,7 +41,6 @@ public class workshopRes extends windowWorkshop{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
 		showNote(score);
 	}
 	
