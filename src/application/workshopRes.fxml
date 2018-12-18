@@ -23,27 +23,27 @@
                   <Font name="Ubuntu" size="20.0" />
                </font>
             </Button>
-            <Label layoutX="404.0" layoutY="160.0" text="Exercice fini">
+            <Label alignment="CENTER" layoutY="160.0" prefWidth="1034.0" text="Exercice fini">
                <font>
                   <Font name="Ubuntu" size="50.0" />
                </font>
             </Label>
-            <Label layoutX="315.0" layoutY="326.0" text="Bonne(s) réponse(s) :">
+            <Label layoutX="291.0" layoutY="325.0" text="Bonne(s) réponse(s) :">
                <font>
                   <Font name="Ubuntu" size="40.0" />
                </font>
             </Label>
-            <Label fx:id="nbRep" layoutX="713.0" layoutY="326.0" text="3">
+            <Label fx:id="nbRep" layoutX="689.0" layoutY="325.0" text="3">
                <font>
                   <Font name="Ubuntu" size="40.0" />
                </font>
             </Label>
-            <Label layoutX="733.0" layoutY="326.0" text="/">
+            <Label layoutX="709.0" layoutY="325.0" text="/">
                <font>
                   <Font name="Ubuntu" size="40.0" />
                </font>
             </Label>
-            <Label layoutX="744.0" layoutY="326.0" text="5">
+            <Label layoutX="720.0" layoutY="325.0" text="5">
                <font>
                   <Font name="Ubuntu" size="40.0" />
                </font>

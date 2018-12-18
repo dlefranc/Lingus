@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.layout.Pane;
 
 public class windowConnect {
 	@FXML
@@ -17,12 +18,15 @@ public class windowConnect {
 	private PasswordField mdpProf;
 	@FXML
 	private Label erreur;
+	@FXML
+	private Pane mainPane;
+	
+	private String user = "Pseudo";
+	private String mdp = "test";
 	
 	public void tryConnec(ActionEvent event) throws IOException{
-		String user="Pseudo";
-		String mdp="test";
 		
-		if(userProf.getText().equals(user)  && mdpProf.getText().equals(mdp)) {
+		if(userProf.getText().equals(user) && mdpProf.getText().equals(mdp)) {
 			Parent homeView = FXMLLoader.load(getClass().getResource("windowHome.fxml"));
 			Scene homeScene = new Scene(homeView);
 			
@@ -34,8 +38,5 @@ public class windowConnect {
 			mdpProf.setStyle("-fx-border-color: red; -fx-border-radius: 25; -fx-background-radius: 25; ");
 			erreur.setStyle("-fx-font-color: red; visibility: true;"); 
 		}
-		
-		
-
 	}
 }
